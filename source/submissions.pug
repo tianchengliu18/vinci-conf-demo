@@ -1,0 +1,231 @@
+extends partials/site
+
+block content
+
+  section.container
+
+    // important dates are defined in conference.json
+    mixin deadline(dates, remark)
+      if(dates.length === 0)
+        span.text-muted tba
+      else 
+        each date in dates
+          if(date != dates[dates.length - 1])
+            span.revised.text-decoration-line-through= date
+        span(data-deadline = dates[dates.length - 1]).deadline #{dates[dates.length - 1]}
+        br.pb-0 
+        small(data-daysleft = dates[dates.length - 1]).daysleft
+        if(remark)
+          span.remark.text-muted.float-end |&ensp;#{remark}
+
+    .row.justify-content-center
+      .col-custom.col-padding.conf-dates
+
+      
+        +h2('Submission')
+        dt TBA
+
+    //-     +h2('Important Dates')
+        
+    //-     p All deadlines are at 23:59 #[a(href = 'https://time.is/Anywhere_on_Earth') AOE] on the date indicated:
+
+    //-     .row.conf-dates-title
+    //-       .col-head Track
+    //-       .col-date Submission
+    //-       .col-date Notification
+    //-       .col-date Camera-Ready
+
+    //-     .row.conf-date
+    //-       .col-head Full Papers
+    //-       .col-date #[+deadline(conference.dates.full_submission, '')]
+    //-       .col-date #[+deadline(conference.dates.full_notification, '')]
+    //-       .col-date #[+deadline(conference.dates.full_cameraready, '')]
+
+    //-     .row.conf-date
+    //-       .col-head Short Papers
+    //-       .col-date #[+deadline(conference.dates.short_submission, '')]
+    //-       .col-date #[+deadline(conference.dates.short_notification, '')]
+    //-       .col-date #[+deadline(conference.dates.short_cameraready, '')]
+
+    //-     .row.conf-date
+    //-       .col-head Poster 
+    //-       .col-date #[+deadline(conference.dates.poster_submission, '')]
+    //-       .col-date #[+deadline(conference.dates.poster_notification, '')]
+    //-       .col-date #[+deadline(conference.dates.poster_cameraready, '')]
+
+    //-     .row.conf-date
+    //-       .col-head Workshop Proposals
+    //-       .col-date #[+deadline(conference.dates.ws_props_submission, '')]
+    //-       .col-date #[+deadline(conference.dates.ws_props_notification, '')]
+    //-       .col-date
+
+    //-     .row.conf-date
+    //-       .col-head Workshop Submissions
+    //-       .col-date #[+deadline(conference.dates.workshop_submission, '')]
+    //-       .col-date #[+deadline(conference.dates.workshop_notification, '')]
+    //-       .col-date #[+deadline(conference.dates.workshop_cameraready, '')]
+
+    //-     script
+    //-       include js/until.js
+  
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding.conf-dates
+
+    //-     +h2('Paper Types')
+
+    //-     p #[strong Research Papers:] A research paper describes a new algorithm, technique, system, or theory that have not previously appeared in the literature, or that significantly extended. The description provided in the paper should be complete enough that a competent/qualified graduate student in visualization could implement or apply the work and should provide an formal/informal evaluation and discussion regarding its strengths and weaknesses.
+        
+    //-     p #[strong Experience Papers:] An Experience paper reports on experience made during the applications of existing algorithms, techniques, systems, or theories as possibly alternative approaches to already researched  problems in visual communication and interaction. This includes a description of a problem domain, data sets, the questions to be addressed, and describes the application to the task.
+
+    //-     p #[strong Tooling/Demonstration Papers:] Papers in this category, apply existing and well known algorithms, techniques, or systems for visual communication and interaction in new application fields/domains or demonstrate specific technical aspects as well as customized software solutions. Submissions should address what will be learned from the demonstration. 
+
+    //-     .types
+    //-       table.table.table-sm
+    //-         thead
+    //-           tr
+    //-             th(scope = 'col') 
+    //-             th(scope = 'col') Full
+    //-             th(scope = 'col') Short
+    //-             th(scope = 'col') Poster
+    //-         tbody
+    //-           tr.table-emph
+    //-             td(scope = 'row')  Pages
+    //-             td &le; 8
+    //-             td &le; 4 *
+    //-             td &le; 2
+    //-           tr
+    //-             td(scope = 'row') Research
+    //-             td &times;
+    //-             td &times;
+    //-             td &times;
+    //-           tr
+    //-             td(scope = 'row') Experience
+    //-             td &ensp;
+    //-             td &times;
+    //-             td &times;
+    //-           tr
+    //-             td(scope = 'row') Tooling
+    //-             td &ensp;
+    //-             td &ensp;
+    //-             td &times;
+    //-           tr
+    //-             td(scope = 'row') Demonstration
+    //-             td &ensp;
+    //-             td &ensp;
+    //-             td &times;
+
+    //-     p.text-end #[small * An additional page containing only references is allowed.]
+          
+    //-   //-
+    //-         | Full | Short | Poster
+    //-     pages | 8 | 4 | 2 |
+    //-     references | +0 | +1 | +0 |
+    //-     Research  | &#8226; |  &#8226; | &#8226; |
+    //-     Experience|  |  &#8226; | &#8226; |
+    //-     Tooling/Demonstration| &#8226; |  &#8226; | &#8226; |
+
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     +h2('Paper Submission & Guidelines')
+    //-     p
+    //-       | Submissions that address research and development, and experience reports
+    //-       | on the above topics are strongly encouraged.
+    //-       | Papers can be submitted as full papers, short papers, and posters. 
+    //-       | Each submitted symposium paper will be peer-reviewed by at least three International Program Committee members. 
+    //-       | You are welcome to submit a paper to #{conference.short} #{conference.year}. 
+    //-       | All accepted papers and posters will appear in the proceedings of #{conference.short} #{conference.year} published by ACM ICPS and made available in the #[a(href="http://dl.acm.org/") ACM Digital Library] (EI indexed). 
+    //-       | Authors of a number of selected full papers of high quality will be invited to prepare revised versions of their work for submission to a special issue of the #[a(href="https://link.springer.com/journal/12650") Journal of Visualization] (SCI indexed) and a special issue of the #[a(href="https://vciba.springeropen.com/") Journal of Visual Computing for Industry, Biomedicine, and Art].
+
+    //-     p 
+    //-       | All paper submissions should be made through the EasyChair (#[a(href="https://easychair.org/conferences/?conf=vinci2022") easychair.org]) conference management system.
+    //-       | The review process will be double-blind, thus submitting an anonymized version of your manuscript by removing all author and affiliation information from submissions and supplemental files as well as substitute your paper's ID number for the author name. 
+    //-       | All submissions Manuscripts must be written in English and formatted according to the #[a(href="http://www.acm.org/publications/proceedings-template") ACM Proceedings Template] (using sigconf format/template double-column style) and should consist of a single PDF file. 
+    //-       | Please note: the authors of accepted papers will be later requested to submit source Latex or Word files during camera-ready version submission. 
+    //-       | We appreciate the submission of videos or other supplemental material. Please provide supplemental videos in MPEG-4, and use PNG for supplemental images, both in sufficient resolution.
+    //-       | In case of any questions related to the submission process or conference program, please contact the program chairs via #[a(href="mailto:vinci2022@easychair.org") vinci2022@easychair.org].
+
+    //-     //-
+    //-       p
+    //-         | Research papers and experience reports of up to eight (8), short papers of up to
+    //-         | four (4), and tool demonstrations or posters of up to two (2) ACM double-column
+    //-         | pages should be submitted through #[a(href="https://easychair.org/conferences/?conf=vinci2022") easychair.org]. The review process will be single-blind.
+    //-         | We appreciate the submission of videos or other supplemental material. Please provide
+    //-         | a URL at the end of the submitted paper to enable the reviewers the download of your
+    //-         | additional material. Detailed information on the electronic submission can be found at
+    //-         | the end of this page.
+
+    //-       p
+    //-         | All submissions (regular papers, proposals of workshops/tutorial/etc) must be formatted
+    //-         | using the #[a(href="http://www.acm.org/publications/proceedings-template") ACM Proceedings Template] (using sigconf format/template) and should consist
+    //-         | of one single PDF file (please note: the authors of accepted papers will be later requested
+    //-         | to submit source Latex or Word files during camera-ready version submission). The maximum
+    //-         | length of each symposium paper is defined as follows.
+
+    //-       p
+    //-         | NOTE: All paper submissions should be made through the #[a(href="https://easychair.org/conferences/?conf=vinci2022") EasyChair] conference management system.
+    //-         | In case of any questions related to the submission process or conference program, please contact
+    //-         | the program chairs via #[a(href="mailto:pchairs@vinci-conf.org") pchairs@vinci-conf.org].
+
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     +h2('Scope & Topics')
+    //-     p 
+    //-       | We solicit original, unpublished research papers that focus on all aspects of visual information communication and interaction, either via images, computer graphics, animations, virtual reality, web, or other visual media. 
+    //-       | Research papers should address cognitive and design aspects, underlying theories, taxonomies, implementation work, tool support, and case studies. Topics of interest include but are not limited to the following:
+    
+    //-     ul
+    //-       li.list-item Visual communication metaphors
+    //-       li.list-item Cognitive aspects of visual information comprehension
+    //-       li.list-item Empirical studies of novel visual metaphors
+    //-       li.list-item Visualization on artificial intelligence, machine learning and other fields
+    //-       li.list-item Explainable artificial intelligence
+    //-       li.list-item Aesthetics in visual communication and computational aesthetics
+    //-       li.list-item Influence of visual arts and design to visual communication
+    //-       li.list-item Information visualization and visual analytics
+    //-       li.list-item Visual approaches to knowledge discovery
+    //-       li.list-item Visual interaction through multimodality
+    //-       li.list-item Visualization on mobile devices
+    //-       li.list-item Graph drawing and network visualization
+    //-       li.list-item Visual modeling languages
+    //-       li.list-item Visual programming languages
+    //-       li.list-item Graphical user interface design
+    //-       li.list-item Human-computer interaction
+    //-       li.list-item Applications in SoftVis, BioVis, GeoVis, etc.
+
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+        
+    //-     +h2('Workshops & Tutorials')
+    //-     p
+    //-       | #{conference.short} #{conference.shortYear} is also soliciting proposals for full-day or half-day workshops and tutorials on topics that address areas of interest to the community.
+    //-       | In particular, workshop proposals should include:
+
+    //-     ul.list
+    //-       li.list-item A title and brief description of the specific issues that the workshop will address, the reasons why the workshop is of interest to VINCI, and the main research areas involved.
+    //-       li.list-item Contact information of the workshop chairs, their competence in the proposed topic(s) and previous experience in chairing scientific events.
+    //-       li.list-item A tentative list of program committee members.
+    //-       li.list-item Intended length (half or full day) and a draft of the Call for Papers.
+    //-       li.list-item It is expected that the workshop organizers will setup an own workshop web page as soon as the workshop proposal has been accepted.
+
+    //-     p
+    //-       | Tutorials usually attract a broad range of audiences, including professionals, researchers,
+    //-       | students, or practitioners, who wish to enhance their knowledge in the specific tutorial topic.
+    //-       | Tutorials offer a unique opportunity to disseminate in-depth information on specific topics
+    //-       | in visual information communication and interaction. Tutorial proposals should include short
+    //-       | biographies of the proposers, a draft of the tutorial content, intended length, and evidence
+    //-       | of the possibility of attracting audience to the tutorial.
+  
+    //-   //-
+    //-     p
+    //-       | It is possible to extend the symposium by one day in case many workshops or tutorials are
+    //-       | proposed and accepted.
+
+    //-     p
+    //-       | Workshop proposals should be sent via email to
+    //-       | #[a(href="mailto:proposals@vinci-conf.org?subject=VINCI 2022 - (Workshop/Tutorial/Session/Panel) Proposal Submission") proposals@vinci-conf.org]. Please add the concrete proposal type to the subject line.

@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Overview",
+        "url": "index"
+    },
+    {
+        "title": "Submissions",
+        "url": "submissions"
+    },
+    {
+        "title": "Registration",
+        "url": "registration"
+    },
+    {
+        "title": "Program",
+        "url": "program"
+    },
+    {
+        "title": "Keynotes",
+        "url": "keynotes"
+    },
+    {
+        "title": "Workshops",
+        "url": "workshops"
+    },
+    {
+        "title": "Venue",
+        "url": "venue"
+    },
+    {
+        "title": "Committees",
+        "url": "committees"
+    }
+]

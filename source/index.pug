@@ -1,0 +1,114 @@
+extends partials/site
+
+block content
+
+  section.container
+
+
+    .row.justify-content-center
+      .col-custom.col-padding
+
+        +h2('News')
+        dl.row
+          dt.col-sm-2.text-sm-end 02/11/2022
+          dd.col-sm-10 The website for #[strong VINCI '23] is up!
+          
+          //- dt.col-sm-2.text-sm-end 29/04/2022
+          //- dd.col-sm-10 Paper and Workshop Submission Deadline extended to #{conference.dates.full_submission}
+          
+          //- dt.col-sm-2.text-sm-end 04/14/2022
+          //- dd.col-sm-10 Paper and Workshop Submission Deadline extended to 29/04/2022
+
+          //- dt.col-sm-2.text-sm-end 01/18/2022
+          //- dd.col-sm-10 #[a(href="https://easychair.org/conferences/?conf=vinci2022") EasyChair] is open for submissions.
+
+          //- dt.col-sm-2.text-sm-end 09/13/2021
+          //- dd.col-sm-10 The website for #[strong VINCI '22] is up!
+
+          //- dt.col-sm-2.text-sm-end 09/13/2021
+          //- dd.col-sm-10 VINCI '21 is over, thanks a lot to all attendees!
+          
+          //- //- dt.col-sm-2.text-sm-end 07/29/2021
+          //- //- dd.col-sm-10 Got your paper or poster accepted? Remember to #[a(href = '/registration.html') register for virtual attendance].
+          
+          //- dt.col-sm-2.text-sm-end 09/07/2021
+          //- dd.col-sm-10 The Best Paper award of VINCI '21 was presented to Oliver Moseler, Lucas Kreber, and Stephan Diehl for their work entitled "ThreadRadar: A Thread-Aware Visualization for Debugging Concurrent Java Programs".
+          
+          //- dt.col-sm-2.text-sm-end 09/07/2021
+          //- dd.col-sm-10 The Best Short Paper award of VINCI '21 was presented to Maath Musleh, Angelos Chatzimparmpas, and Ilir Jusufi for their work entitled "Visual Analysis of Industrial Multivariate Time Series".
+
+          //- dt.col-sm-2.text-sm-end 09/13/2021
+          //- dd.col-sm-10 VINCI '21 website was archived and has moved to #[a(href="http://vinci-conf.org/2021") vinci-conf.org/2021].
+          
+          //- dt.col-sm-2.text-sm-end 09/03/2021
+          //- dd.col-sm-10 Visit the #[a(href="https://hopin.com/") event at Hopin].
+
+          //- dt.col-sm-2.text-sm-end 08/13/2021
+          //- dd.col-sm-10 The #[a(href="/program.html") preliminary program] is available.
+
+          //- dt.col-sm-2.text-sm-end 07/29/2021
+          //- dd.col-sm-10.text-danger #[strong.text-danger Please Note: the conference will be virtual only].
+
+          //- dt.col-sm-2.text-sm-end 07/06/2021
+          //- dd.col-sm-10 Poster submission #[strong deadlines extended] to #[a(href="/submissions.html") #{conference.dates.poster_submission}].
+
+          //- dt.col-sm-2.text-sm-end 06/29/2021
+          //- dd.col-sm-10 #[a(href = '/registration.html') Registration for the event] is open. Early birds register by #{conference.dates.registration}.
+
+          //- dt.col-sm-2.text-sm-end 06/28/2021
+          //- dd.col-sm-10 #[strong Workshops] confirmed. Paper submissions are due by #[a(href="/workshops.html") #{conference.dates.workshop_paper}].
+
+          //- dt.col-sm-2.text-sm-end 04/22/2021
+          //- dd.col-sm-10 Paper submission #[strong deadlines extended] to #[a(href="/submissions.html") #{conference.dates.full_submission}].
+
+          //- dt.col-sm-2.text-sm-end 03/05/2021
+          //- dd.col-sm-10 We are currently preparing for a #[strong hybrid event].
+
+          //- dt.col-sm-2.text-sm-end 02/12/2021
+          //- dd.col-sm-10 #[strong Keynote] speaker confirmed. We are pleased to announce that #[strong Prof. Tamara Munzner] (University of British Columbia, Canada) has accepted our invitation to give a keynote. 
+          //-   | #[a(href = 'https://www.cs.ubc.ca/~tmm/') Find out more about Tamara Munzner.]
+
+          //- dt.col-sm-2.text-sm-end 01/18/2021
+          //- dd.col-sm-10 #[strong Keynote] speaker confirmed. We are pleased to announce that #[strong Prof. Alexandru Telea] (Utrecht University, Netherlands) has accepted our invitation to give a keynote. 
+          //-   | #[a(href = 'https://webspace.science.uu.nl/~telea001/Main/HomePage') Find out more about Alexandru Telea.]
+
+
+    .row.justify-content-center
+      .col-custom.col-padding
+        
+        +h2('About the Symposium')
+        p
+          | Visual communication through graphical or sign languages has long been conducted among human beings of different backgrounds or cultures, and in recent decades between human and machine.
+          | In today's digital world, visual information is typically encoded with various metaphors commonly used in daily life to facilitate rapid comprehension and easy analysis during the communication process.
+          | Visual information communication generally encompasses information visualization, graphical user-interfaces, visual analytics, and visual languages.
+          | Visual information is increasingly being used to facilitate human-human communication through the Internet and mobile devices.
+
+        p
+          | The #{conference.title} (#{conference.short})
+          | is the premier international forum for researchers and industrial practitioners to discuss the state of the art in visual communication theories, designs, and applications.
+          | The #{conference.number}#{conference.ordinal} #{conference.title} (#{conference.short} #{conference.shortYear}) will be held during #{conference.date} #{conference.year}, in #{conference.location}.
+
+        p
+          | Selected papers will be published in a special issue of the #[strong Journal of Visualization (JOVI)].
+
+
+    .row.justify-content-center
+      .col-custom.col-padding
+
+        +h2('Previous Events')
+        ul.list-inline 
+          li.list-inline-item #[a(href="http://vinci-conf.org/2022") Chur (2022)], 
+          li.list-inline-item #[a(href="http://vinci-conf.org/2021") Potsdam (2021)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2020") Eindhoven (2020)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2019") Shanghai (2019)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2018") Växjö (2018)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2017") Bangkok (2017)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2016") Dallas (2016)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2015") Tokyo (2015)],
+          li.list-inline-item #[a(href="http://vinci-conf.org/2014") Sydney (2014)],
+          li.list-inline-item Tianjin (2013),
+          li.list-inline-item #[a(href="http://www.cad.zju.edu.cn/home/chenwei/VINCI2012/") Hangzhou (2012)],
+          li.list-inline-item #[a(href="http://www.cse.ust.hk/vinci2011/") Hong Kong (2011)], 
+          li.list-inline-item Beijing (2010),
+          li.list-inline-item #[a(href="https://staff.cdms.westernsydney.edu.au/~vinh/vinci09/index.php") Sydney (2009)]
+          // - li.list-inline-item and Shanghai (2008).

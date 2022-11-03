@@ -1,0 +1,149 @@
+extends partials/site
+
+block content
+
+  section.container
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     +h2('Workshops')
+    //-     p
+    //-       | Workshop for the VINCI 2022 can still be proposed. For more information see #[a(href="/submissions.html") Submissions] page.
+    //-       | More information will follow in the coming days and weeks.
+
+
+    .row.justify-content-center
+      .col-custom.col-padding
+      
+        +h2('Workshops')
+        dt TBA
+
+    //-     ul.list
+    //-       li.list-item #[a(href="workshops.html#yavic") Youth Academic Workshop on Visual Information Communication (YAVIC)] 
+    //-       //- li.list-item #[a(href="workshops.html#3divc") Workshop on 3D Interaction for Visual Communication (3DIVC)] 
+    //-       li.list-item #[a(href="workshops.html#previous").text-muted Previous Workshops of VINCI] 
+
+    //-     p
+    //-       | Please submit your workshop paper by following the submission guidelines of VINCI for short papers (4 pages limit). 
+    //-       | The workshop paper submission deadline is on #{conference.dates.workshop_paper}. 
+    //-       | Early work and prototypes are welcome!
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     a(name = 'yavic')
+    //-       +h2('Youth Workshop')
+
+    //-     h3 2nd Youth Academic Workshop on Visual Information Communication
+    //-     p 
+    //-       | The rapid development of the field of data science creates many new ideas, concepts, technologies, from machine and deep learning, clustering, data mining, knowledge extraction, but also more visualization-related topics like visual analytics, information and software visualization, AR, VR, MR, immersive analytics, as well as explainable AI or human-computer interaction.
+    //-     p 
+    //-       | To offer an opportunity for young researchers in these fields we organize the 2nd Youth Academic Workshop on Visual Information Communication to attract submissions from bachelor and master students. 
+    //-       | The papers must be submitted as short papers (4 pages written in English) in our VINCI conference paper format. 
+    //-       | The submission deadline is #[strong April 15th, 2022], the same as for the short and full papers. 
+    //-       | The papers will be peer-reviewed 
+    //-       | and in case of acceptance published in the ACM VINCI proceedings as short papers.   
+    //-       | The students of accepted papers can register for the conference at a reduced registration fee of only 100 Euros.
+
+    //-     h3 The relevant topics for this workshop are:
+
+    //-     ul
+    //-       li Information visualization
+    //-       li Visual analytics
+    //-       li Data science
+    //-       li Machine and deep learning
+    //-       li Explainable AI
+    //-       li Human-computer interaction
+    //-       li Arts and computational aesthetics
+      
+    //-     p 
+    //-       | Acceptable submission types include position papers, case studies, surveys, methods and techniques, and evaluations. 
+    //-       | Early work and prototypes are welcome, however, no plagiarism is allowed.
+
+    //-     h3 Paper Chairs:
+    //-     p 
+    //-       | Wolfgang Semar and Michael Burch, 
+    //-       <br>
+    //-       | FHGR, University of Applied Sciences, Chur, Switzerland
+
+
+    //- //- .row.justify-content-center
+    //- //-   .col-custom.col-padding
+
+    //- //-     a(name = 'vci')
+    //- //-       +h2('VCI Workshop')
+
+    //- //-     h3 Workshop on Visual Communication in and for the Industry
+    //- //-     p 
+    //- //-       | The industry produces a wealth of data sources in our modern days, demanding for advanced techniques and technologies from the fields of computer and data science, visual analytics, and human-computer interaction in combination. 
+    //- //-       | In particular, aspects from interactive visualizations are crucial ingredients in this whole data exploration process to visually communicate the results of a data analysis. 
+    //- //-       | Although the field has progressed a lot in the past, there are still lots of challenges worth discussing which mostly hinder the use, application, or acceptance of visualizations in industry as a way to communicate between researchers and industrial partners in a collaborative and cooperative way. 
+    //- //-       | The goal of this workshop is to build a community to discuss such issues and to try to find solutions that help to prevent such issues in the future.
+
+    //- //-     h3 The relevant topics for this workshop are:
+
+    //- //-     ul
+    //- //-       li Visualization techniques for the industry
+    //- //-       li Interaction concepts for the industry
+    //- //-       li Challenges in the visual communication/collaboration/cooperation
+    //- //-       li User studies and evaluations relevant for the industry
+    //- //-       li Application examples for the industry
+    //- //-       li Negative results of visual concepts in the industry
+    //- //-       li Data science concepts with focus on visual communication in the industry
+    //- //-       li Feedback from industrial partners based on visual results
+
+    //- //-     h3 Paper Chairs:
+    //- //-     p 
+    //- //-       | Heiko Rölke and Michael Burch, University of Applied Sciences, Chur, Switzerland
+
+    //- //- .row.justify-content-center
+    //- //-   .col-custom.col-padding
+
+    //- //-     a(name = '3divc')
+    //- //-       +h2('3DIVC Workshop')
+
+    //- //-     h3 Workshop on 3D Interaction for Visual Communication
+    //- //-     p 
+    //- //-       | Today's visualizations are generally expected to provide some degree of interactivity. 
+    //- //-       | Interaction is the key ingredient that enables exploration of otherwise static images and is a driving force for advances in real-time computer graphics as well. 
+    //- //-       | The combination of interaction and real-time rendering has fundamentally changed the understanding of visual information communication.
+
+    //- //-     p 
+    //- //-       | For several decades we have become familiar with 2D user interfaces and with it, 2D visualizations and interactions. 
+    //- //-       | With recent advances in, e.g., GPUs and touch-based devices, minification of sensors, gaze-tracking, gesture-detection, and many more, we have been introduced to more advanced, yet more complicated, metaphors for 3D interactions (e.g., navigating in 3D cartography or walking immersive VR environments).
+
+    //- //-     p 
+    //- //-       | This allowed for many immersive and powerful applications, but also increased the number of possibilities for and complexity of 3D interactions for visual communication. With a dedicated focus on 3D, this workshop aims to explore state-of-the-art, to investigate current challenges and potential solutions, to identify new research questions, and to give a perspective on interesting use cases. 
+        
+    //- //-     h3 The relevant topics for this workshop are:
+
+    //- //-     ul
+    //- //-       li Metaphors and techniques for navigation in 3D visualizations and 3D environments
+    //- //-       li Evaluation of existing interaction concepts, techniques, and applications
+    //- //-       li Navigation on touch-based devices (small and large screens) in virtual 3D environments
+    //- //-       li Collaborative interaction design in 3D visualizations
+    //- //-       li User-interface design for 3D visualizations
+    //- //-       li Guidelines and best-practices for interaction in 3D
+    //- //-       li Frameworks for 3D interaction techniques (event-handling, gesture-detection, state-handling, etc.)
+    //- //-       li Interplay of interaction and visual feedback
+    //- //-       li Interaction aids and gizmos in 3D
+    //- //-       li Techniques for interaction in immersive environments
+    //- //-       li Integration of gaze-based interaction concepts
+    //- //-       li Utilization of existing peripherals for 3D interaction
+    //- //-       li Rendering techniques for aiding object identification
+
+    //- //-     h3 Paper Chair:
+    //- //-     p 
+    //- //-       | Matthias Trapp and Daniel Limberger, Hasso Plattner Institute, University of Potsdam, Germany 
+
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     a(name = 'previous')
+    //-       +h2('Previous Workshops')
+
+    //-     ul.list
+    //-       li.list-item #[a(href="https://vinci-conf.org/2020/workshop.html") VINCI 2020]: Workshop on Visual Influence and Influential Visualizations (VIIV'20)
+    //-       li.list-item #[a(href="https://vinci-conf.org/2019/workshop.html") VINCI 2019]: Youth Academic Workshop on Smart Graphic Technology and Application

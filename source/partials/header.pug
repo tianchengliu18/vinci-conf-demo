@@ -1,0 +1,39 @@
+
+section#header.container
+  .row.justify-content-center.mt-4
+    .col-custom
+
+      img(src = require('../img/vinci-logo.svg')).brand-logo
+
+      #carousel(data-bs-ride = 'carousel').carousel.slide.carousel-fade
+        .carousel-inner(data-bs-interval = '8000')
+          .carousel-item.active
+            img(src = require('../img/photos/header-guangzhou4.jpeg') alt = 'chur').d-block.w-100
+          .carousel-item
+            img(src = require('../img/photos/header-guangzhou3.jpeg') alt = 'fhgr-flags').d-block.w-100
+          .carousel-item
+            img(src = require('../img/photos/header-guangzhou2.png') alt = 'htw-chur').d-block.w-100
+          .carousel-item
+            img(src = require('../img/photos/header-guangzhou.jpeg') alt = 'htw-chur').d-block.w-100 
+      p.title
+        a(href = 'index.html') 
+          | The #{conference.number}#[sup #{conference.ordinal}] #{conference.title} (#{conference.short} #{conference.year})
+
+      p.sub-title
+        | #{conference.location}, #{conference.date} #{conference.year}
+
+
+include navbar
+
+
+section#header.container.d-block.d-sm-none
+  .row.justify-content-center
+    .col-lg-8.col-sm.mt-3
+
+      p
+        strong
+          a(href = 'index.html').text-body
+            | The #{conference.number}#[sup #{conference.ordinal}] #{conference.title} (#{conference.short} #{conference.year})
+
+      p.text-end
+        | #{conference.location}, #{conference.date} #{conference.year}

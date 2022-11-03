@@ -1,0 +1,256 @@
+extends partials/site
+
+block content
+
+  section.container
+
+    .row.justify-content-center
+      .col-custom.col-padding
+      
+
+        +h2('Program')
+        dt TBA
+    //-     p 
+    //-     //-   | More information will follow in the coming days and weeks.
+    //-     //-   | All presentations will take place virtually, using the event system Hopin (#[a(href="https://hopin.com/events/vinci-21") visit the event]).
+    //-       | Prelimary program. All times are given in CEST.
+
+    //-     ul.list
+    //-       li.list-item #[a(href="program.html#day01") August 16, 2022 / Day 1 / Tuesday]
+    //-       li.list-item #[a(href="program.html#day02") August 17, 2022 / Day 2 / Wednesday]
+    //-       li.list-item #[a(href="program.html#day03") August 18, 2022 / Day 3 / Thursday]
+
+
+    //-     table.table.table-borderless.align-top.table-program
+    //-       thead
+    //-         tr.border-bottom.border-dark
+    //-           th(scope = 'col' colspan = '1') #[.fw-light Time]
+    //-           th(scope = 'col' colspan = '1') #[a(name = 'day01') Tuesday / August 16, 2022 / Day One]
+    //-       tbody
+    //-         tr.text-muted
+    //-           td 08:00
+    //-           td Registration Opens
+    //-         tr
+    //-           td 09:00
+    //-           td #[strong Opening of VINCI]
+    //-         tr
+    //-           td(rowspan = '2') 09:30
+    //-           td.d-flex #[strong Keynote Talk 1]
+    //-             small.ms-auto Session Chair: Michael Burch
+    //-         tr
+    //-           td Visual Analytics for Industrial Data Analysis #[sup KN] <br>
+    //-             small Tobias Schreck, TU Graz, Austria
+    //-         tr.text-muted
+    //-           td 10:30
+    //-           td Coffee Break
+    //-         tr 
+    //-           td(rowspan = '2') 11:00 
+    //-           td.d-flex #[strong Paper Session 1: Users and Design]
+    //-             small.ms-auto Session Chair: Günter Wallner
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 How Students Design Visual Interfaces for Information Visualization Tools #[sup FP] <br>
+    //-                 small Michael Burch
+    //-               li.pb-1 Abstract and Concrete Materials: What to use for Visualization Onboarding? #[sup FP] <br>
+    //-                 small Christina Stoiber, Florian Grassinger and Wolfgang Aigner
+    //-               li Content-Driven Layout for Visualization Design #[sup FP]<br>
+    //-                 small Yngve Sekse Kristiansen, Laura Garrison and Stefan Bruckner
+
+    //-         tr.text-muted
+    //-           td 12:30
+    //-           td Lunch Break
+    //-         tr
+    //-           td(rowspan = '2') 14:00
+    //-           td.d-flex #[strong Poster Session 1]
+    //-             small.ms-auto Session Chair: Sabrina Lindau
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 Visual Analysis of Geospatial Properties #[sup PP] <br>
+    //-                 small Yves Staudt, Michael Burch, Alexander van Schie and Heiko Rölke
+    //-               li.pb-1 A Benchmark for the Use of Topic Models for Text Visualization Tasks #[sup PP] <br>
+    //-                 small Daniel Atzberger, Tim Cech, Willy Scheibel, Daniel Limberger, Jürgen Döllner and Matthias Trapp
+    //-               li.pb-1 π-Experience – Making 62.8 trillion digits come alive #[sup PP] <br>
+    //-                 small Alexander van Schie, Giada Zacheo and Bruno Frey
+
+    //-         tr.text-muted
+    //-           td 15:00
+    //-           td Coffee Break + Poster Session
+    //-         tr
+    //-           td(rowspan = '2') 16:00
+    //-           td.d-flex #[strong Paper Session 2: Perception]
+    //-             small.ms-auto Session Chair: Michael Burch
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 A Comparative Study of Color Between Abstract Paintings, Oil Paintings and Chinese Ink Paintings  #[sup FP] <br>
+    //-                 small Zhenbao Fan, Yixuan Zhu, Christine Yan, Yufan Li and Kang Zhang
+    //-               li.pb-1 Gaze-Guided Class Activation Mapping: Leverage Human Visual Attention for Network Attention in Chest X-rays Classification #[sup FP] <br>
+    //-                 small Hongzhi Zhu, Septimiu Salcudean and Robert Rohling
+    //-               li Conditions of Preserving Mental Images by Contour Deformation #[sup SP]<br>
+    //-                 small Kazuo Misue
+
+    //-         tr.text-muted
+    //-           td 18:30 - 22:00
+    //-           td Reception 
+
+    //-     table.table.table-borderless.align-top.table-program
+    //-       thead
+    //-         tr.border-bottom.border-dark
+    //-           th(scope = 'col' colspan = '1') #[.fw-light Time]
+    //-           th(scope = 'col' colspan = '1') #[a(name = 'day02') Wednesday / August 17, 2022 / Day Two]
+    //-       tbody
+    //-         tr
+    //-           td(rowspan = '2') 09:30
+    //-           td.d-flex #[strong Keynote Talk]
+    //-             small.ms-auto Session Chair: Michael Burch
+    //-         tr
+    //-           td Aesthetic Measurement of Paintings #[sup KN] <br>
+    //-             small Kang Zhang, Computational Media and Arts, Hong Kong University of Science and Technology, China
+
+    //-         tr.text-muted
+    //-           td 10:30
+    //-           td Coffee Break
+ 
+    //-         tr 
+    //-           td(rowspan = '2') 11:00 
+    //-           td.d-flex #[strong Paper Session 3: Techniques]
+    //-             small.ms-auto Session Chair: Tobias Schreck
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 Group Diagrams for Simplified Representation of Scanpaths #[sup FP] <br>
+    //-                 small Peter Schäfer, Nils Rodrigues, Daniel Weiskopf and Sabine Storandt
+    //-               li Accelerating GPU Rendering of 2D Visualizations Using Resolution Scaling and Temporal Reconstruction #[sup FP] <br>
+    //-                 small Michael Becher, Moritz Heinemann, Thomas Marmann, Guido Reina, Daniel Weiskopf and Thomas Ertl
+    //-               li Animated Transitions for Small-Scale Visualizations #[sup FP] <br>
+    //-                 small Franziska Huth, Tanja Blascheck, Steffen Koch and Thomas Ertl
+
+    //-         tr.text-muted
+    //-           td 12:30
+    //-           td Lunch Break
+
+    //-         tr 
+    //-           td(rowspan = '2') 14:00 
+    //-           td.d-flex #[strong Poster Session 2]
+    //-             small.ms-auto Session Chair: Christina Stoiber
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 An Inertial Representation of Search Results #[sup PP] <br>
+    //-                 small Yannis Panagis and Robert Spence
+    //-               li.pb-1 Investigating Color-Object Associations With Eye Tracking #[sup PP] <br>
+    //-                 small Sabrina Zahner, Edina Mesini, Keshina Karunananthan, Gabriel Lüchinger, Sabrina Lindau and Michael Burch
+    //-               li Improving data monitoring systems in biosphere reserves information #[sup PP] <br>
+    //-                 small Nadine Christen, Michael Schlotter and Juliane Streitberg
+    //-               li Explorative Data Analysis of the Number π #[sup PP] <br>
+    //-                 small Yves Staudt, Thomas Keller, Heiko Rölke and Michael Burch
+
+    //-         tr.text-muted
+    //-           td 15:00
+    //-           td Coffee Break + Poster Session
+
+    //-         tr
+    //-           td(rowspan = '2') 16:00
+    //-           td.d-flex #[strong Panel Discussion]
+    //-             small.ms-auto Session Chair: Michael Burch
+    //-         tr 
+    //-           td How the industry and visual analytics play together - Solved problems and open challenges
+    //-             ul.px-0
+    //-               li.pb-1.small Robert Spence, Imperial College London, United Kingdom
+    //-               li.pb-1.small Tobias Schreck, TU Graz, Austria
+    //-               li.pb-1.small Günter Wallner, Johannes Kepler University Linz, Austria
+    //-               li.pb-1.small Yves Staudt, University of Applied Sciences Chur, Switzerland
+    //-         tr.text-muted
+    //-           td 19:00 - 23:00
+    //-           td Social Event and Best Paper Awards
+
+
+    //-     table.table.table-borderless.align-top.table-program
+    //-       thead
+    //-         tr.border-bottom.border-dark
+    //-           th(scope = 'col' colspan = '1') #[.fw-light Time]
+    //-           th(scope = 'col' colspan = '1') #[a(name = 'day03') Thursday / August 18, 2022 / Day Three]
+    //-       tbody
+    //-         tr 
+    //-           td(rowspan = '2') 09:20 
+    //-           td.d-flex #[strong Paper Session 4: Applications]
+    //-             small.ms-auto Session Chair: Günter Wallner
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 LegisLatio: A visualization Tool for Legislative Roll-call Vote Data #[sup FP] <br>
+    //-                 small Gonzalo Mendez, Oscar Moreno and Patricio Mendoza
+    //-               li ICEVis: Interactive Clustering Exploration for tumor sub-region analysis in multiparametric cancer imaging #[sup SP] <br>
+    //-                 small Eric Mörth, Tanja Eichner, Ingfrid Haldorsen, Stefan Bruckner and Noeska Smit
+    //-               li Visual Analysis of Spatio-Temporal Earthquake Events  #[sup SP] <br>
+    //-                 small Michael Burch, Indre Tauroseviciute and Guillermo Mateos Guridi
+
+    //-         tr.text-muted
+    //-           td 10:30
+    //-           td Coffee Break
+
+    //-         tr 
+    //-           td(rowspan = '2') 11:00 
+    //-           td.d-flex #[strong Paper Session 5: Interaction]
+    //-             small.ms-auto Session Chair: Michael Burch
+    //-         tr 
+    //-           td
+    //-             ul.px-0
+    //-               li.pb-1 Investigation of Two Complexity Sources for Statistical Graphs #[sup FP] <br>
+    //-                 small Mark Livingston and Derek Brock
+    //-               li Toward In-Situ Authoring of Situated Visualization with Chorded Keyboards #[sup SP] <br>
+    //-                 small Sarah Dosdall, Katrin Angerbauer, Leonel Merino, Michael Sedlmair and Daniel Weiskopf
+    //-               li MolecuSense: Using Force-Feedback Gloves for Creating and Interacting with Ball-and-Stick Molecules in VR #[sup SP] <br>
+    //-                 small Patrick Gebhardt, Xingyao Yu, Andreas Köhn and Michael Sedlmair
+
+    //-         tr
+    //-           td(rowspan = '2') 12:10
+    //-           td.d-flex #[strong Closing and VINCI 2023]
+    //-             small.ms-auto Michael Burch and Kang Zhang
+    //-         tr
+    //-           td <br>
+    //-             small 
+                
+    //-         tr.text-muted
+    //-           td 12:30
+    //-           td Lunch Break
+
+    //-         tr.text-muted
+    //-           td 14:00
+    //-           td After Conference Events
+
+
+    //- .row.justify-content-center
+    //-   .col-custom.col-padding
+
+    //-     +h2('Presentation Times')
+    //-     p The following presentation times apply to the different paper types:
+
+    //-     .col-lg-10.col-11.mt-4
+    //-       table.table.table-sm.table-borderless.align-middle.table-hover
+    //-         thead
+    //-           tr.text-end
+    //-             th(scope = 'col') 
+    //-             th(scope = 'col') Presentation Time
+    //-             th(scope = 'col') Questions
+    //-         tbody
+    //-           tr.border-bottom.border-muted
+    //-             td FP / Full Paper
+    //-             td.text-end 25 Minutes 
+    //-             td.text-end  5 Minutes
+    //-           tr.border-bottom.border-muted
+    //-             td SP / Short Paper
+    //-             td.text-end 15 Minutes 
+    //-             td.text-end  5 Minutes
+    //-           tr.border-bottom.border-muted
+    //-             td PP / Poster Paper
+    //-             td.text-end 10 Minutes 
+    //-             td.text-end 5 Minutes
+    //-           tr.border-muted
+    //-             td KN / Keynote
+    //-             td.text-end 45 Minutes
+    //-             td.text-end 15 Minutes
+
+

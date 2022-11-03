@@ -1,0 +1,35 @@
+{
+    "title": "International Symposium on Visual Information Communication and Interaction",
+    "short": "VINCI",
+    "number": "16",
+    "ordinal": "th",
+    "date": "24-26 September",
+    "year": "2023",
+    "shortYear": "'23",
+    "location": "Guangzhou, China",
+
+    "dates" : {
+        "example":               [ "02/01/2022", "04/03/2022", "06/05/2022" ],
+
+        "ws_props_submission":   [ "05/06/2022" ],
+        "ws_props_notification": [ "05/01/2022" ],
+
+        "workshop_submission":   [ "06/15/2022" ],
+        "workshop_notification": [ "07/01/2022" ],
+        "workshop_cameraready":  [ "07/15/2022" ],
+
+        "full_submission":       [ "05/06/2022" ],
+        "full_notification":     [ "06/22/2022" ],
+        "full_cameraready":      [ "07/22/2022" ],
+
+        "short_submission":      [ "05/06/2022" ],
+        "short_notification":    [ "06/22/2022" ],
+        "short_cameraready":     [ "07/22/2022" ],
+        
+        "poster_submission":     [ "06/15/2022" ],
+        "poster_notification":   [ "07/01/2022" ],
+        "poster_cameraready":    [ "07/22/2022" ], 
+
+        "registration":          [ "07/15/2022" ]
+    }
+}
