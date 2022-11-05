@@ -1,22 +1,38 @@
 
 section#footer.container
 
-  .row.justify-content-center
+  //- .row.justify-content-center
 
+  //-   .col-6.col-md-2.col-lg-2
+  //-     p.mb-3.clearfix
+  //-       a(href = 'https://www.acm.org/publications/icps-series') #[img(src = require('../img/acm_icps_v2b_alpha_sm.png')).logo]
+
+  //-     //- p.mb-3
+  //-     small Published by ACM International Conference Proceedings Series
+
+  //-     //- .col-6.col-md-4.col-lg-4
+  //-     //-   p.mb-3.clearfix
+  //-     //-     a(href = 'https://www.vsj.jp/') #[img(src = require('../img/vsj-logo-unofficial.svg')).logo]
+  //-     //-   p.mb-5
+  //-     //-     small In cooperation with the Visualization Society of Japan.
+
+  .row.justify-content-center
     .col-6.col-md-2.col-lg-2
       p.mb-3.clearfix
         a(href = 'https://www.acm.org/publications/icps-series') #[img(src = require('../img/acm_icps_v2b_alpha_sm.png')).logo]
-      
+
       //- p.mb-3
       small Published by ACM International Conference Proceedings Series
-   
-      //- .col-6.col-md-4.col-lg-4
-      //-   p.mb-3.clearfix
-      //-     a(href = 'https://www.vsj.jp/') #[img(src = require('../img/vsj-logo-unofficial.svg')).logo]
-      //-   p.mb-5
-      //-     small In cooperation with the Visualization Society of Japan.
 
-  .row.justify-content-center
+
+    .col-6.col-md-4.col-lg-5
+      p.mb-3.clearfix  
+        a(href = 'https://hkust-gz.edu.cn/') #[img(src = require('../img/hkust-logo-sm3.png')).logo]
+
+
+      small 
+        | The Hong Kong University of science and Technology (Guangzhou)
+
     .col-6.col-md-4.col-lg-4
       p.mb-3.clearfix
         a(href = 'https://cma.hkust-gz.edu.cn/') #[img(src = require('../img/cma-logo-sm.png')).logo]
@@ -24,27 +40,7 @@ section#footer.container
       //-   | 123123
       //-   br
       //-   | 123123
-    
-
-    .col-6.col-md-4.col-lg-4
-      p.mb-3.clearfix  
-        a(href = 'https://hkust-gz.edu.cn/') #[img(src = require('../img/hkust-logo-sm.png')).logo]
-        //- 
-          small 
-            | FH Graubünden
-            br 
-            | University of Applied Sciences
-            br
-            | Pulvermühlestrasse 57
-            br
-            | CH - 7000 Chur
-
-  .row.justify-content-center
-    .col-6.col-md-4.col-lg-5
-      //- p.mb-5
       small Organized by the Computational Media and Arts Thrust, Infomation Hub, 
-        br
-        | The Hong Kong University of science and Technology (Guangzhou)
         br
         | Contact us via 
         br
@@ -52,8 +48,21 @@ section#footer.container
         br
         | phone: #[a(href = 'tel:+4')] +4
 
-      //- p.mb-5.clearfix
-      //-   small In cooperation with: #[a(href="https://www.vsj.jp/" target="_blank") The Visualization Society of Japan] 
+  //- .row.justify-content-center
+  //-   .col-6.col-md-4.col-lg-5
+  //-     //- p.mb-5
+  //-     small Organized by the Computational Media and Arts Thrust, Infomation Hub, 
+  //-       br
+  //-       | The Hong Kong University of science and Technology (Guangzhou)
+  //-       br
+  //-       | Contact us via 
+  //-       br
+  //-       | email: #[a(href = 'kz') kz@ust] or 
+  //-       br
+  //-       | phone: #[a(href = 'tel:+4')] +4
+
+  //-     //- p.mb-5.clearfix
+  //-     //-   small In cooperation with: #[a(href="https://www.vsj.jp/" target="_blank") The Visualization Society of Japan] 
 
 footer.text-center
   small Copyright &copy; #{Math.min(conference.year, 2023)} #{conference.short}
