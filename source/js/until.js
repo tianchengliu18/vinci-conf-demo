@@ -1,3 +1,9 @@
+/*
+ * @Description: 
+ * @Author: Qing Shi
+ * @Date: 2022-11-04 09:53:46
+ * @LastEditTime: 2023-01-17 22:50:09
+ */
 function untilDays(targetAsString) {
     var today  = new Date();
     var target = new Date(Date.parse(targetAsString));
