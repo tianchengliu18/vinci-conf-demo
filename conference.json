@@ -11,6 +11,14 @@
     "dates" : {
         "example":               [ "04/01/2023", "04/01/2023", "04/01/2023" ],
 
+
+        "art_submission":       [ "05/01/2023" ],
+        "art_notification":     [ "06/01/2023" ],
+        "art_cameraready":      [ "07/01/2023" ],
+        "young_submission":       [ "05/01/2023" ],
+        "young_notification":     [ "06/01/2023" ],
+        "young_cameraready":      [ "07/01/2023" ],
+
         "ws_props_submission":   [ "04/01/2023" ],
         "ws_props_notification": [ "05/01/2023" ],
 

@@ -21,12 +21,12 @@ block content
     .row.justify-content-center
       .col-custom.col-padding.conf-dates
 
-      
+
         //- +h2('Submission')
         //- dt TBA
 
         +h2('Important Dates')
-        
+
         p All deadlines are at 23:59 #[a(href = 'https://time.is/Anywhere_on_Earth') AOE] on the date indicated:
 
         .row.conf-dates-title
@@ -65,23 +65,123 @@ block content
           .col-date #[+deadline(conference.dates.workshop_notification, '')]
           .col-date #[+deadline(conference.dates.workshop_cameraready, '')]
 
+        .row.conf-date
+          .col-head Art Paper/Gallery
+          .col-date #[+deadline(conference.dates.art_submission, '')]
+          .col-date #[+deadline(conference.dates.art_notification, '')]
+          .col-date #[+deadline(conference.dates.art_cameraready, '')]
+
+
+        
+        .row.conf-date
+          .col-head Young Talent Summit
+          .col-date #[+deadline(conference.dates.young_submission, '')]
+          .col-date #[+deadline(conference.dates.young_notification, '')]
+          .col-date #[+deadline(conference.dates.young_cameraready, '')]
+
         script
           include js/until.js
-  
+
 
     .row.justify-content-center
       .col-custom.col-padding.conf-dates
 
         +h2('Paper Types')
 
-        p #[strong Research Papers:] A research paper describes a new algorithm, technique, system, or theory that have not previously appeared in the literature, or that significantly extended. The description provided in the paper should be complete enough that a competent/qualified graduate student in visualization could implement or apply the work and should provide an formal/informal evaluation and discussion regarding its strengths and weaknesses.
+        p #[strong Technical Papers:] A technical paper describes a new algorithm, technique, system, or theory that have not previously appeared in the literature. The description provided in the paper should be complete enough that a competent/qualified graduate student in visual information communication could implement or apply the work and should provide an formal/informal evaluation and discussion regarding its strengths and weaknesses.
 
-        p #[strong Art Papers:] This section of the conference serves as a link between arts, technology and science by offering creative views and artistic applications. We are especially interested in the submissions that demonstrate tangible and artistic ways of information visualization, and address information aesthetics. The topics range from experimental and interdisciplinary case studies and methodologies, novel and critical interfaces for information visualization to critical analysis of theory and reference works in the field. 
+        //- p #[strong Research Papers:] A research paper describes a new algorithm, technique, system, or theory that have not previously appeared in the literature, or that significantly extended. The description provided in the paper should be complete enough that a competent/qualified graduate student in visualization could implement or apply the work and should provide an formal/informal evaluation and discussion regarding its strengths and weaknesses.
+        p #[strong Art Papers:] This track serves as a link between arts, technology and science by offering creative views and artistic applications. We are especially interested in the submissions that demonstrate tangible and artistic ways of visual information communication, and address information aesthetics. The topics range from experimental and interdisciplinary case studies and methodologies, novel and critical interfaces for VINCI topics to critical analysis of theory and reference works in the field.
+        //- p #[strong Art Papers:] This section of the conference serves as a link between arts, technology and science by offering creative views and artistic applications. We are especially interested in the submissions that demonstrate tangible and artistic ways of information visualization, and address information aesthetics. The topics range from experimental and interdisciplinary case studies and methodologies, novel and critical interfaces for information visualization to critical analysis of theory and reference works in the field.
+
+        p #[strong Young Talent Summit Papers: ]This track serves as a link between young students and Academica by offering creative views and various research applications. Young Talent Summit aims to encourage young potential scholars, such as high school students, to present their original research/findings for the analysis and visualization in the advanced technologies. The topics range from experimental and interdisciplinary applications to critical analysis. There are two formats: short (≤ 4 pages) and poster (≤ 2 pages). The short paper demonstrates an in-depth analysis and a relatively novel contribution, while the poster paper shares alternative approaches, ideas or experiments.
+        //- p #[strong Young Talent Summit Papers:] This section of the conference serves as a link between young students and Academica by offering creative views and various research applications. Young Talent Summit aims to encourage young potential scholars such as high school students to present their original research/findings for the analysis and visualization in the advanced technologies. The topics range from experimental and interdisciplinary applications to critical analysis. There are two formats: short (≤ 4 pages) and poster (≤ 2 pages). The short paper demonstrates an in-depth analysis and a relatively novel contribution, while the poster paper shares alternative approaches, ideas or experiments. 
         
-        p #[strong Experience Papers:] An Experience paper reports on experience made during the applications of existing algorithms, techniques, systems, or theories as possibly alternative approaches to already researched  problems in visual communication and interaction. This includes a description of a problem domain, data sets, the questions to be addressed, and describes the application to the task.
 
-        p #[strong Tooling/Demonstration Papers:] Papers in this category, apply existing and well known algorithms, techniques, or systems for visual communication and interaction in new application fields/domains or demonstrate specific technical aspects as well as customized software solutions. Submissions should address what will be learned from the demonstration. 
 
+        //- p #[strong Experience Papers:] An Experience paper reports on experience made during the applications of existing algorithms, techniques, systems, or theories as possibly alternative approaches to already researched  problems in visual communication and interaction. This includes a description of a problem domain, data sets, the questions to be addressed, and describes the application to the task.
+
+        //- p #[strong Tooling/Demonstration Papers:] Papers in this category, apply existing and well known algorithms, techniques, or systems for visual communication and interaction in new application fields/domains or demonstrate specific technical aspects as well as customized software solutions. Submissions should address what will be learned from the demonstration. 
+
+        //- .types
+        //-   table.table.table-sm
+        //-     thead
+        //-       tr
+        //-         th(scope = 'col') 
+        //-         th(scope = 'col') Full
+        //-         th(scope = 'col') Short
+        //-         th(scope = 'col') Poster
+        //-     tbody
+        //-       tr.table-emph
+        //-         td(scope = 'row')  Pages
+        //-         td &le; 8
+        //-         td &le; 4 *
+        //-         td &le; 2
+        //-       tr
+        //-         td(scope = 'row') Research
+        //-         td &radic;
+        //-         td &radic;
+        //-         td &radic;
+        //-       tr
+        //-         td(scope = 'row') Art
+        //-         td &radic;
+        //-         td &radic;
+        //-         td &radic;
+        //-       tr
+        //-         td(scope = 'row') Young
+        //-         td &ensp;
+        //-         td &radic;
+        //-         td &radic;
+              //- tr
+              //-   td(scope = 'row') Experience
+              //-   td &ensp;
+              //-   td &radic;
+              //-   td &radic;
+              //- tr
+              //-   td(scope = 'row') Tooling
+              //-   td &ensp;
+              //-   td &ensp;
+              //-   td &radic;
+              //- tr
+              //-   td(scope = 'row') Demonstration
+              //-   td &ensp;
+              //-   td &ensp;
+              //-   td &radic;
+
+        //- p.text-end #[small * An additional page containing only references is allowed.]
+
+      //-
+        | Full | Short | Poster
+        pages | 8 | 4 | 2 |
+        references | +0 | +1 | +0 |
+        Research  | &#8226; |  &#8226; | &#8226; |
+        Experience|  |  &#8226; | &#8226; |
+        Tooling/Demonstration| &#8226; |  &#8226; | &#8226; |
+
+    .row.justify-content-center
+      .col-custom.col-padding 
+        +h2('Art Gallery')
+        p
+          | The VINCI Art Gallery celebrates artistic creation that demonstrate conceptual and technological innovation related to visual information communication and interaction. We accept project types include data art, generative art, interactive graphics, real-time simulation, scientific illustration, creative and critical visualization, and more. The art gallery call is open-theme, and this year we especially encourage artworks that respond to environmental and health issues or explore the relationship between art and science. Projects that thoughtfully engage with recent popular interests in machine learning, blockchain, and metaverse are also welcome.
+        p 
+          |Artwork submissions to the Art Gallery should include a 1-to-2-page poster / description / artist's statement. The artwork should be completed within the last 5 years (in or after 2018) and ready to be installed. We do not place restrictions on previously exhibited work, but the accompanying poster / description / statement should not have been published or accepted for publication elsewhere. 
+
+        p 
+          | Selected works will be exhibited in the brand new HKUST-GZ Multimedia and XR Spaces. We will further work with selected artists to discuss exhibition logistics and the final display form. Shipping of physical objects is expected to be covered by the artist(s) unless otherwise noted.
+          //- |Selected works will be exhibited in dedicated spaces as part of the symposium programming. The accompanying poster / description / statement will be included in the symposium proceeding published by ACM. We will further work with selected artists to discuss exhibition logistics and the final display form. Shipping of physical objects is expected to be covered by the artist(s) unless otherwise noted.
+
+        p
+          |All Art Gallery submissions should be made through EasyChair (#[a(href="easychair.org") easychair.org]). Submission materials include:
+      
+        ul
+          li.list-item Submission form: with basic information including title, year, medium, abstract, etc.
+          li.list-item Main image in JPG or PNG format for promotional use.
+          li.list-item Up to 3 additional images in JPG or PNG format for web publication and communication.
+          li.list-item An accompanying poster / description / artist's statement of up to 2 pages. This document should not have been published or accepted for publication elsewhere. 
+          li.list-item For screen-based, installation, or interactive work: video of up to 5 minutes in MP4 or MOV format.
+          li.list-item For static 2D/3D work: up to 6 images in JPG or PNG format. 
+          li.list-item Installation specification: details for installing the work, including dimension, required floor / wall space, power, hardware, sound, network, furniture, etc. Including optional images of installation illustration or documentation.
+          li.list-item For logistics questions regarding installation and equipment, please contact #[a(href="vinciinfo23@gmail.com") vinciinfo23@gmail.com].
         .types
           table.table.table-sm
             thead
@@ -98,40 +198,43 @@ block content
                 td &le; 2
               tr
                 td(scope = 'row') Research
-                td &times;
-                td &times;
-                td &times;
+                td &radic;
+                td &radic;
+                td &radic;
               tr
                 td(scope = 'row') Art
-                td &times;
-                td &times;
-                td &times;
+                td &radic;
+                td &radic;
+                td &radic;
               tr
-                td(scope = 'row') Experience
+                td(scope = 'row') Young
                 td &ensp;
-                td &times;
-                td &times;
+                td &radic;
+                td &radic;
+
               tr
-                td(scope = 'row') Tooling
+                td(scope = 'row') Gallery
                 td &ensp;
                 td &ensp;
-                td &times;
-              tr
-                td(scope = 'row') Demonstration
-                td &ensp;
-                td &ensp;
-                td &times;
+                td &radic;
+              //- tr
+              //-   td(scope = 'row') Experience
+              //-   td &ensp;
+              //-   td &radic;
+              //-   td &radic;
+              //- tr
+              //-   td(scope = 'row') Tooling
+              //-   td &ensp;
+              //-   td &ensp;
+              //-   td &radic;
+              //- tr
+              //-   td(scope = 'row') Demonstration
+              //-   td &ensp;
+              //-   td &ensp;
+              //-   td &radic;
 
         p.text-end #[small * An additional page containing only references is allowed.]
-          
-      //-
-            | Full | Short | Poster
-        pages | 8 | 4 | 2 |
-        references | +0 | +1 | +0 |
-        Research  | &#8226; |  &#8226; | &#8226; |
-        Experience|  |  &#8226; | &#8226; |
-        Tooling/Demonstration| &#8226; |  &#8226; | &#8226; |
-
+        p.text-end #[small * All accepted Full, Short, and Poster papers will be included in the ACM Proceedings as formal publications and EI-indexed.]
 
     .row.justify-content-center
       .col-custom.col-padding
@@ -144,10 +247,11 @@ block content
           | Each submitted symposium paper will be peer-reviewed by at least three International Program Committee members. 
           | You are welcome to submit a paper to #{conference.short} #{conference.year}. 
           | All accepted papers and posters will appear in the proceedings of #{conference.short} #{conference.year} published by ACM ICPS and made available in the #[a(href="http://dl.acm.org/") ACM Digital Library] (EI indexed). 
-          | Authors of a number of selected full papers of high quality will be invited to prepare revised versions of their work for submission to a special issue of the #[a(href="https://vciba.springeropen.com/") Journal of Visual Computing for Industry, Biomedicine, and Art] (Springer). Best papers will be nominated to publish in a special section of #[a(href = "https://www.springer.com/journal/371") The Visual Computer] (Springer).
+          //- | Authors of a number of selected full papers of high quality will be invited to prepare revised versions of their work for submission to a special issue of the #[a(href="https://vciba.springeropen.com/") Journal of Visual Computing for Industry, Biomedicine, and Art] (Springer). Best papers will be nominated to publish in a special section of #[a(href = "https://www.springer.com/journal/371") The Visual Computer] (Springer).
+          | Authors of a number of selected full papers of high quality will be invited to prepare extended versions for submission to a Special Section of #[a(href = "https://www.springer.com/journal/371") The Visual Computer] (Springer), and a Special Issue of the #[a(href="https://vciba.springeropen.com/") Journal of Visual Computing for Industry, Biomedicine, and Art] (Springer). 
 
         p 
-          | All paper submissions should be made through the EasyChair (#[a(href="https://easychair.org/conferences/?conf=vinci2022") easychair.org]) conference management system.
+          | All paper submissions should be made through the EasyChair (#[a(href="https://easychair.org/conferences/?conf=vinci2023") easychair.org]) conference management system.
           | The review process will be double-blind, thus submitting an anonymized version of your manuscript by removing all author and affiliation information from submissions and supplemental files as well as substitute your paper's ID number for the author name. 
           | All submissions Manuscripts must be written in English and formatted according to the #[a(href="http://www.acm.org/publications/proceedings-template") ACM Proceedings Template] (using sigconf format/template double-column style) and should consist of a single PDF file. 
           | Please note: the authors of accepted papers will be later requested to submit source Latex or Word files during camera-ready version submission. 
@@ -184,7 +288,7 @@ block content
         p 
           | We solicit original, unpublished research papers that focus on all aspects of visual information communication and interaction, either via images, computer graphics, animations, virtual reality, web, artistic projects, or other visual media. 
           | Research papers should address cognitive and design aspects, underlying theories, taxonomies, implementation work, tool support, and case studies. Topics of interest include but are not limited to the following:
-    
+
         ul
           li.list-item Visual communication metaphors
           li.list-item Cognitive aspects of visual information comprehension
@@ -213,11 +317,16 @@ block content
           li.list-item Visual storytelling
           li.list-item Data art
           li.list-item Information aesthetics 
+          li.list-item Interactive graphics
+          li.list-item Real-time simulation
+          li.list-item Generative art
+          li.list-item Creative applications of scientific illustration
+
 
 
     .row.justify-content-center
       .col-custom.col-padding
-        
+
         +h2('Workshops & Tutorials')
         p
           | #{conference.short} #{conference.shortYear} is also soliciting proposals for full-day or half-day workshops and tutorials on topics that address areas of interest to the community.
@@ -237,7 +346,7 @@ block content
           | in visual information communication and interaction. Tutorial proposals should include short
           | biographies of the proposers, a draft of the tutorial content, intended length, and evidence
           | of the possibility of attracting audience to the tutorial.
-  
+
       //-
         p
           | It is possible to extend the symposium by one day in case many workshops or tutorials are
