@@ -9,32 +9,32 @@
     "location": "Guangzhou, China",
 
     "dates" : {
-        "example":               [ "05/01/2023", "05/01/2023", "05/01/2023" ],
+        "example":               [ "05/28/2023", "05/28/2023", "05/28/2023" ],
 
 
-        "art_submission":       [ "05/01/2023" ],
+        "art_submission":       [ "05/28/2023" ],
         "art_notification":     [ "07/01/2023" ],
         "art_cameraready":      [ "07/15/2023" ],
-        "young_submission":       [ "05/01/2023" ],
+        "young_submission":       [ "05/28/2023" ],
         "young_notification":     [ "07/01/2023" ],
         "young_cameraready":      [ "07/15/2023" ],
 
-        "ws_props_submission":   [ "05/01/2023" ],
+        "ws_props_submission":   [ "05/28/2023" ],
         "ws_props_notification": [ "07/01/2023" ],
 
-        "workshop_submission":   [ "05/01/2023" ],
+        "workshop_submission":   [ "05/28/2023" ],
         "workshop_notification": [ "07/01/2023" ],
         "workshop_cameraready":  [ "07/15/2023" ],
 
-        "full_submission":       [ "05/01/2023" ],
+        "full_submission":       [ "05/28/2023" ],
         "full_notification":     [ "07/01/2023" ],
         "full_cameraready":      [ "07/15/2023" ],
 
-        "short_submission":      [ "05/01/2023" ],
+        "short_submission":      [ "05/28/2023" ],
         "short_notification":    [ "07/01/2023" ],
         "short_cameraready":     [ "07/15/2023" ],
         
-        "poster_submission":     [ "05/01/2023" ],
+        "poster_submission":     [ "05/28/2023" ],
         "poster_notification":   [ "07/01/2023" ],
         "poster_cameraready":    [ "07/15/2023" ], 
 
