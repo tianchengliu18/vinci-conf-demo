@@ -2,120 +2,149 @@ extends partials/site
 
 block content
 
-  section.container
+    section.container
 
-    .row.justify-content-center
-      .col-custom.col-padding
-
-
-        +h2('Registration')
-        //- dt TBA
-        p 
-          | More information will follow in the coming days and weeks.
-          //- | The event is planned as a #[s hybrid] #[strong virtual-only] event. 
-          //- | You can participate in all keynotes and technical sessions virtually both as participant and as a speaker.
+        .row.justify-content-center
+            .col-custom.col-padding
 
 
-        p #[strong Important Notes:]
-          ul
-            li Regular and student registration includes all technical sessions, proceedings, lunches, coffee breaks, and banquet.
-            li For VINCI 2023 registration, please download and fill out the Registration Form in English and send to info2023@vinci-symp.org.
-            li Please note #[strong “VINCI2023+Your name”] when transferring the registration fee, and send the scanned version of transfer voucher to info2023@vinci-symp.org.
-            li The invitation letter is sent #[strong ONLY] if registration payment is received.
-            li For on-site registration, please pay your registration fee with cash or UnionPay/Visa/MastarCard card.
-            li Notice that every accepted paper must have one regular registration.
-            //- li The social event is optional and not included by default (please check in the registration form). 
-            //- li We can not provide on-site registration. Registrations after 08/31/21 can only register for virtual attendance.
-
-        //- h3 Registration Form
-        //- p 
-        //-   //- | More information will follow in the coming days and weeks.
-        //-   //- | For VINCI '21 registration, please refer to our #[a(href = 'https://hpi.de/en/the-hpi/registration/2021/international-symposium-on-visual/') registration form].
-        //-   //- | Since the event will be virtual-only, please do register for virtual attendance only &mdash; the registration form will be adjusted asap.
-        //-   | For conference registration, please send an email to michael.burch@fhgr.ch with your full name, 
-        //-   | ACM membership, address, country, and email address. We will contact you as soon as possible with 
-        //-   | the bank account details, in case you have to pay a registration fee. If your paper is accepted to the 
-        //-   | Youth Academic Workshop, the registration costs are 100 CHF for the student, 150 CHF for late registration. 
-        //-   | We will also send a registration confirmation and also a conference attendance confirmation at your given address. 
-        //-   | Please contact michael.burch@fhgr.ch for further details or missing information.
-
-    .row.justify-content-center
-      .col-custom.col-padding.conf-prices
-
-        +h2('Registration Fees')
-
-        //- p More information will follow in the coming days and weeks.
-
-        test
-
-          .col-lg-10.col-11.mt-4
-            table.table.table-sm.text-end.table-borderless.align-middle.table-hover
-              thead
-                tr.text-center.text-muted
-                  th(scope = 'col').border-end.border-dark
-                  //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Registration category
-                  //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Regular
-                  //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Student
-                  th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Early Bird (until Aug 13, 2023)
-                  th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Late Registration (after Aug 13, 2023)
-                  
-              //- thead
-              //-   tr
-                  //- td.border-end.border-dark
-                  //- td.border.border-top-0.border-dark.pe-4 Non-ACM
-                  //- td.border.border-top-0.border-dark.pe-4 Non-ACM
-                  //- td.border.border-top-0.border-dark.pe-4 ACM
-                  //- td.border.border-top-0.border-dark.pe-4 Non-ACM
-                  //- td.border.border-top-0.border-dark.pe-4 ACM
-              tbody
-                tr.text-center.border-bottom.border-dark
-                  //- td(scope = 'row').text-start #[ Extra Social Event**]
-                  td(colspan = '3').border.border-dark.pe-4 #[ FULL PROGRAM]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Regular, ACM Member]
-                  td.border-end.pe-4.border-dark.border #[ 3450RMB / 500USD]
-                  td.border-end.pe-4.border-dark.border #[ 4150RMB / 600USD]
-                  //- td.border-end.pe-4 #[ 300 CHF]
-                  //- td.border-end.border-dark.pe-4 #[ 250 CHF]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Regular, Non-ACM Member]
-                  td.border-end.pe-4.border-dark.border #[ 4150RMB / 600USD]
-                  td.border-end.pe-4.border-dark.border #[ 4850RMB / 700USD]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Student, ACM Member]
-                  td.border-end.pe-4.border-dark.border #[ 2050RMB / 300USD]
-                  td.border-end.pe-4.border-dark.border #[ 2400RMB / 350USD]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Student, Non-ACM Member]
-                  td.border-end.pe-4.border-dark.border #[ 2400RMB / 350USD]
-                  td.border-end.pe-4.border-dark.border #[ 2750RMB / 400USD]
-                  //- td(scope = 'row').border-end.border-dark.text-start #[ Late Registration]
-                  //- td.border-end.pe-4 #[ 550 CHF]
-                  //- td.border-end.pe-4 #[ 450 CHF]
-                  //- td.border-end.pe-4 #[ 350 CHF]
-                  //- td.border-end.border-dark.pe-4 #[ 300 CHF]
-                tr.text-center.border-bottom.border-dark
-                  //- td(scope = 'row').text-start #[ Extra Social Event**]
-                  td(colspan = '3').border.border-dark.pe-4 #[ ART GALLERY ONLY]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Students/Independent Artists]
-                  td.border-end.pe-4.border-dark.border #[ 700RMB / 100USD]
-                  td.border-end.pe-4.border-dark.border #[ 1050RMB / 150USD]
-                tr.text-center.border-bottom.border-dark
-                  td(scope = 'row').border-end.border-dark.border #[ Others]
-                  td.border-end.pe-4.border-dark.border #[ 1050RMB / 150USD]
-                  td.border-end.pe-4.border-dark.border #[ 1400RMB / 200USD]
-    //-            tr
-    //-              td(scope = 'row')
-    //-              td(colspan = '4').border-0.text-start
-    //-                | #[ * Early bird deadline is 07/15/2022.]
-
-    //-                | #[ ** The social event is included. If you want to register an additional person you have to pay 80 CHF extra.]
-    .row.justify-content-center
-          .col-custom.col-padding
+                +h2('Registration')
+                //- dt TBA
+                p 
+                    | More information will follow in the coming days and weeks.
+                    //- | The event is planned as a #[s hybrid] #[strong virtual-only] event. 
+                    //- | You can participate in all keynotes and technical sessions virtually both as participant and as a speaker.
 
 
-            +h2('Payment Information')
+                p #[strong Important Notes:]
+                    ul
+                        li Regular and student registration includes all technical sessions, proceedings, lunches, coffee breaks, and banquet.
+                        li For VINCI 2023 registration, please download and fill out the #[a(href="./img/Registration_Form_VINCI2023.docx" download="Registration_Form_VINCI2023.docx" style="text-decoration: underline") Registration Form] in English and send to #[a(href="mailto: vinciinfo23@gmail.com") vinciinfo23@gmail.com].
+                        li Please write #[strong “VINCI2023 + Your name”] when transferring the registration fee, and send the scanned version of transfer voucher to #[a(href="mailto: vinciinfo23@gmail.com") vinciinfo23@gmail.com].
+                        li The invitation letter is sent #[strong ONLY] if registration payment is received.
+                        li For on-site registration, please pay your registration fee with UnionPay/Visa/MastarCard card (#[strong We do not support cash payments]).
+                        li Notice that every accepted paper must have one regular registration.
+                        //- li The social event is optional and not included by default (please check in the registration form). 
+                        //- li We can not provide on-site registration. Registrations after 08/31/21 can only register for virtual attendance.
 
-            p
-              | TBC
+                //- h3 Registration Form
+                //- p 
+                //-   //- | More information will follow in the coming days and weeks.
+                //-   //- | For VINCI '21 registration, please refer to our #[a(href = 'https://hpi.de/en/the-hpi/registration/2021/international-symposium-on-visual/') registration form].
+                //-   //- | Since the event will be virtual-only, please do register for virtual attendance only &mdash; the registration form will be adjusted asap.
+                //-   | For conference registration, please send an email to michael.burch@fhgr.ch with your full name, 
+                //-   | ACM membership, address, country, and email address. We will contact you as soon as possible with 
+                //-   | the bank account details, in case you have to pay a registration fee. If your paper is accepted to the 
+                //-   | Youth Academic Workshop, the registration costs are 100 CHF for the student, 150 CHF for late registration. 
+                //-   | We will also send a registration confirmation and also a conference attendance confirmation at your given address. 
+                //-   | Please contact michael.burch@fhgr.ch for further details or missing information.
+
+        .row.justify-content-center
+            .col-custom.col-padding.conf-prices
+
+                +h2('Registration Fees')
+
+                //- p More information will follow in the coming days and weeks.
+
+                test
+
+                    .col-lg-10.col-11.mt-4
+                        table.table.table-sm.text-end.table-borderless.align-middle.table-hover
+                            thead
+                                tr.text-center.text-muted
+                                    th(scope = 'col').border-end.border-dark
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Registration category
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Regular
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Student
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Early Bird (until Aug 13, 2023)
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Late Registration (after Aug 13, 2023)
+
+                            //- thead
+                            //-   tr
+                            //- td.border-end.border-dark
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 ACM
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 ACM
+                            tbody
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row').text-start #[ Extra Social Event**]
+                                    td(colspan = '3').border.border-dark.pe-4 #[ FULL PROGRAM]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Regular, ACM Member]
+                                    td.border-end.pe-4.border-dark.border #[ 3450RMB / 500USD]
+                                    td.border-end.pe-4.border-dark.border #[ 4150RMB / 600USD]
+                                    //- td.border-end.pe-4 #[ 300 CHF]
+                                    //- td.border-end.border-dark.pe-4 #[ 250 CHF]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Regular, Non-ACM Member]
+                                    td.border-end.pe-4.border-dark.border #[ 4150RMB / 600USD]
+                                    td.border-end.pe-4.border-dark.border #[ 4850RMB / 700USD]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Student, ACM Member]
+                                    td.border-end.pe-4.border-dark.border #[ 2050RMB / 300USD]
+                                    td.border-end.pe-4.border-dark.border #[ 2400RMB / 350USD]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Student, Non-ACM Member]
+                                    td.border-end.pe-4.border-dark.border #[ 2400RMB / 350USD]
+                                    td.border-end.pe-4.border-dark.border #[ 2750RMB / 400USD]
+                                    //- td(scope = 'row').border-end.border-dark.text-start #[ Late Registration]
+                                    //- td.border-end.pe-4 #[ 550 CHF]
+                                    //- td.border-end.pe-4 #[ 450 CHF]
+                                    //- td.border-end.pe-4 #[ 350 CHF]
+                                    //- td.border-end.border-dark.pe-4 #[ 300 CHF]
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row').text-start #[ Extra Social Event**]
+                                    td(colspan = '3').border.border-dark.pe-4 #[ ART GALLERY ONLY]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Students/Independent Artists]
+                                    td.border-end.pe-4.border-dark.border #[ 700RMB / 100USD]
+                                    td.border-end.pe-4.border-dark.border #[ 1050RMB / 150USD]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Others]
+                                    td.border-end.pe-4.border-dark.border #[ 1050RMB / 150USD]
+                                    td.border-end.pe-4.border-dark.border #[ 1400RMB / 200USD]
+        //-            tr
+        //-              td(scope = 'row')
+        //-              td(colspan = '4').border-0.text-start
+        //-                | #[ * Early bird deadline is 07/15/2022.]
+
+        //-                | #[ ** The social event is included. If you want to register an additional person you have to pay 80 CHF extra.]
+
+        .row.justify-content-center
+            .col-custom.col-padding
+
+
+                +h2('Payment Information')
+                //- p TBC
+                p #[strong (1) RMB Transfer]
+                    ul
+                        li 账户名称 (Account Name): 香港科技大学 (广州)
+                        li 银行账号 (Account Number): 3602056909200688696
+                        li 开户银行: 中国工商银行广东自由贸易试验区南沙分行
+                        li 银行机构代码 (行号): 102581000290
+                        li Swift Code: ICBKCNBJGDG
+
+                p #[strong (2) Foreign Currency (USD) Transfer]
+                    ul
+                        li Beneficiary's Name: The Hong Kong University of Science and Technology(Guangzhou)
+                        li Beneficiary's Account NO.: 3602056909200688696
+                        li Currency: CNY
+                        li Beneficiary's Address: 1st Duxue Road,Nansha District,Guangzhou,Guangdong,CHINA
+                        li Bank Name: Industrial And Commercial Bank Of China Guangdong free trade pilot zone Nansha branch
+                        li Bank Address: No.3, Wangjiang 2nd street, Huangge Town, Nan Sha District, Guangzhou, China
+                        li Swift Code: 
+                            ul
+                                li Bank Code for Foreign Currency Receipts: ICBKCNBJGDG
+                                li Bank Code for Renminbi (RMB) Transactions: 1 02581 000290
+
+                p #[strong (3) RMB Transfer]
+                    ul
+                        li Please pay your registration fee with UnionPay/Visa/MasterCard card (#[strong We do not support cash payments]).
+                        li Registration Time: TBA 
+                
+                p #[strong (4) QR Code]
+                    ul
+                        li You can scan the QR code for payment. Please write #[strong "VINCI23 + Your name"] in the transaction details.
+                img(src = require('./img/qrcode.jpg') alt = 'Doris Kosminsky').keynote-portrait
