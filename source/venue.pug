@@ -2,100 +2,186 @@ extends partials/site
 
 block content
 
-  section.container
+    section.container
 
-    .row.justify-content-center
-      .col-custom.col-padding
-     
-        +h2('Social Program')
-        //- dt TBA
-        
-        ul
-          li Reception
-          li Banquet (Zhujiang River Cruise)
-          img(src = require('/img/photos/zhujiang.jpg') alt = 'Zhujiang River Cruise').figure-img.img-fluid
-          li Tianhou Temple
-          img(src = require('/img/photos/tianhou.jpg') alt = 'Tianhou Temple').figure-img.img-fluid
-          li HKUST-GZ brand new campus tour
-          img(src = require('/img/photos/hkustgz1.jpg') alt = 'campus').figure-img.img-fluid
-        p 
-          | 
-        +h2('Hong Kong University of Science and Technology (Guangzhou)')
-        p
-          | The conference will take place in HKUST (GZ) campus. 
-        p
-          | The conference is organized by the 'Computational Media and Arts (CMA)' at HKUST (GZ). CMA is a research and academic thrust area within the Information Hub, The Hong Kong University of Science and Technology (Guangzhou). As an interdisciplinary program for computational and radical creativity, CMA brings together visionaries with backgrounds in art, design, science, and engineering to think critically, reach beyond convention and make innovation.
-          //-  See the map of Chur and the red colored star.
-          
-        figure.figure.mt-1
-          //- img(src = require('/img/photos/vinci2022-venue.jpg') alt = 'map of conference location').figure-img.img-fluid
-          img(src = require('/img/photos/hkustgz4.jpg') alt = 'campus').figure-img.img-fluid
-          img(src = require('/img/photos/hkustgz2.jpg') alt = 'campus').figure-img.img-fluid
-          img(src = require('/img/photos/hkustgz2.png') alt = 'campus').figure-img.img-fluid
-          img(src = require('/img/photos/hkustgz3.png') alt = 'campus').figure-img.img-fluid
-        //-   | More information will follow in the coming days and weeks.
-        //-   | The Hasso Plattner Institute (#[a(href = 'https://hpi.de/en/index.html') HPI]) is unique in the German university landscape.
-        //-   | Academically structured as the independent Digital Engineering Faculty (#[a(href = 'https://www.uni-potsdam.de/en/digital-engineering/faculty/overview') DEF]) at the
-        //-   | University of Potsdam, HPI unites excellent research and teaching with the advantages
-        //-   | of a privately financed institute and a tuition-free study program.
-        
-        //- p
-        //-   | The conference is organized by the 'Computer Graphics Systems Group' at the HPI (#[a(href = 'https://hpi3d.de') HPI3D]). 
-        //-   | This group is dedicated to research and development in information visualization, visual analytics, and visual computing. 
-        //-   | Research topics include Geospatial Analysis &amp; Geovisualization, Sensor Analytics,  Visual Media, Information Visualization &amp; Cartography, Real-Time Rendering, as well as Non-Photorealistic Rendering.
-        //- h3 Campus
-        //- figure.figure.mt-1
-        //-   a(href = 'https://www.google.com/maps/@52.391877,13.1318504,257a,35y,357.61h,39.73t/data=!3m1!1e3')
-        //-     img(src = require('/img/photos/gmaps-hpi-campus.jpg') alt = 'gmaps-hpi-campus').figure-img.img-fluid
-        //-   figcaption.figure-caption.text-end #[small Click/touch the map to visit google maps at +52.391877+13.1318504/.]
-    .row.justify-content-center
-      .col-custom.col-padding
+        .row.justify-content-center
+            .col-custom.col-padding
 
-        +h2('Attractions in Guangzhou')
-        p 
-          //- | There are many attractions related to mountain climbing, hiking, walking, biking, and so on. There are lots of restaurants 
-          //- | and viewpoints from the mountains. You might even take a train through the Alps to see the wonderful landscape. 
-          //- | Have a look at #[a(href = 'https://www.chur.graubuenden.ch/de/angebot/gaestekarte-chur') chur.graubuenden.ch]
-          | More information will follow in the coming days and weeks.
-          //- | Potsdam is the capital and largest city of the German state of Brandenburg and directly borders the German capital, Berlin. 
-          //- | The city which is over 1000 years old is widely known for its palaces, its lakes, and its overall historical and cultural significance. 
-          //- | Landmarks include the parks and palaces of Sanssouci, Germany's largest World Heritage Site, as well as other palaces such as the Orangery Palace, the New Palace, the Cecilienhof Palace, or the Charlottenhof Palace.
-        //- p Please visit the following sites for more information:
-        //-   ul
-        //-     li #[a(href = 'https://www.potsdam-tourism.com/en/home') potsdam-tourism.com]
-        //-     li #[a(href = 'https://www.tripadvisor.com/Attractions-g187330-Activities-Potsdam_Brandenburg.html') tripadvisor.com]
-    .row.justify-content-center
-      .col-custom.col-padding
-  
-        +h2('Transportation')
-        //- p 
-        //-   strong By car:
-        //-   |  Chur has a direct motorway connection (A 13). If you come from Zurich take the motorway A3 to San Bernadino and 
-        //-   |  then at Sargans change to the A13 in the direction of Chur. If you come from Italy, follow the A13 in the direction of Chur/Zurich.
-          
-        //- p
-        //-   strong By train:
-        //-   |  There are trains from Zurich central station and from Zurich airport to Chur central station. For some connections you have 
-        //-   |  to change trains in St.Margrethen. For more information look at www.bahn.de.
-          
-        //- p
-        //-   strong By plane:
-        //-   |  The best option is to take a plane to Zurich airport and then take the train to Chur. 
-        p 
-          | More information will follow in the coming days and weeks.
+                +h2('Social Program')
+                //- dt TBA
+
+                ul
+                    li Reception
+                    li Banquet (Zhujiang River Cruise)
+                    img(src = require('/img/photos/zhujiang.jpg') alt = 'Zhujiang River Cruise').figure-img.img-fluid
+                    //- li Tianhou Temple
+                    //- img(src = require('/img/photos/tianhou.jpg') alt = 'Tianhou Temple').figure-img.img-fluid
+                    li HKUST-GZ brand new campus tour
+                    img(src = require('/img/photos/hkustgz1.jpg') alt = 'campus').figure-img.img-fluid
+                p 
+                    | 
+                +h2('Hong Kong University of Science and Technology (Guangzhou)')
+                p
+                    | The conference will take place in HKUST (GZ) campus. 
+                p
+                    | The conference is organized by the 'Computational Media and Arts (CMA)' at HKUST (GZ). CMA is a research and academic thrust area within the Information Hub, The Hong Kong University of Science and Technology (Guangzhou). As an interdisciplinary program for computational and radical creativity, CMA brings together visionaries with backgrounds in art, design, science, and engineering to think critically, reach beyond convention and make innovation.
+                    //-  See the map of Chur and the red colored star.
+
+                figure.figure.mt-1
+                    //- img(src = require('/img/photos/vinci2022-venue.jpg') alt = 'map of conference location').figure-img.img-fluid
+                    img(src = require('/img/photos/hkustgz4.jpg') alt = 'campus').figure-img.img-fluid
+                    img(src = require('/img/photos/hkustgz2.jpg') alt = 'campus').figure-img.img-fluid
+                    img(src = require('/img/photos/hkustgz2.png') alt = 'campus').figure-img.img-fluid
+                    img(src = require('/img/photos/hkustgz3.png') alt = 'campus').figure-img.img-fluid
+                //-   | More information will follow in the coming days and weeks.
+                //-   | The Hasso Plattner Institute (#[a(href = 'https://hpi.de/en/index.html') HPI]) is unique in the German university landscape.
+                //-   | Academically structured as the independent Digital Engineering Faculty (#[a(href = 'https://www.uni-potsdam.de/en/digital-engineering/faculty/overview') DEF]) at the
+                //-   | University of Potsdam, HPI unites excellent research and teaching with the advantages
+                //-   | of a privately financed institute and a tuition-free study program.
+
+                //- p
+                //-   | The conference is organized by the 'Computer Graphics Systems Group' at the HPI (#[a(href = 'https://hpi3d.de') HPI3D]). 
+                //-   | This group is dedicated to research and development in information visualization, visual analytics, and visual computing. 
+                //-   | Research topics include Geospatial Analysis &amp; Geovisualization, Sensor Analytics,  Visual Media, Information Visualization &amp; Cartography, Real-Time Rendering, as well as Non-Photorealistic Rendering.
+                //- h3 Campus
+                //- figure.figure.mt-1
+                //-   a(href = 'https://www.google.com/maps/@52.391877,13.1318504,257a,35y,357.61h,39.73t/data=!3m1!1e3')
+                //-     img(src = require('/img/photos/gmaps-hpi-campus.jpg') alt = 'gmaps-hpi-campus').figure-img.img-fluid
+                //-   figcaption.figure-caption.text-end #[small Click/touch the map to visit google maps at +52.391877+13.1318504/.]
+        .row.justify-content-center
+            .col-custom.col-padding
+
+                +h2('Conference Banquet')
+                p 
+                    | We cordially invite all participants of VINCI 2023 to join us for a banquet on September 23, 2023. The banquet will take place aboard the iconic "Honghualang Insurance Cruise”, offering an opportunity to experience the cultural significance of the Pearl River night cruise, a renowned attraction among "Eight Scenic Spots of Guangzhou."
+                p
+                    | #[strong  Exploring the Magic of the Pearl River Night Cruise:]
+                p
+                    | Experience Guangzhou's history and modernity with a Pearl River night cruise. See the city's development over two millennia and witness dazzling lights along the riverbanks. Don't miss this captivating journey!
+                    img(src = require('/img/photos/zhujiang_1.jpg') alt = 'Zhujiang River Cruise' style={width: '800px'}).figure-img.img-fluid
+                p #[strong  Embarking on the "Honghualang Insurance Cruise":]
+                p Cruise on the Honghualang Insurance ship, modeled after the "Liaoning" aircraft carrier. Enjoy networking and intellectual conversations while admiring the Pearl River's beautiful views.
+                    img(src = require('/img/photos/zhujiang_2.jpg') alt = 'Zhujiang River Cruise' style={width: '100%'})
+                p The banquet on the Honghualang Insurance Cruise promises an unforgettable night of cultural immersion, academic exchange, and delightful cuisine. Don't miss this opportunity to connect with fellow participants and celebrate the intersection of VINCI 2023.
+                    //- | There are many attractions related to mountain climbing, hiking, walking, biking, and so on. There are lots of restaurants 
+                    //- | and viewpoints from the mountains. You might even take a train through the Alps to see the wonderful landscape. 
+                    //- | Have a look at #[a(href = 'https://www.chur.graubuenden.ch/de/angebot/gaestekarte-chur') chur.graubuenden.ch]
+                    //- | More information will follow in the coming days and weeks.
+                    //- | Potsdam is the capital and largest city of the German state of Brandenburg and directly borders the German capital, Berlin. 
+                    //- | The city which is over 1000 years old is widely known for its palaces, its lakes, and its overall historical and cultural significance. 
+                    //- | Landmarks include the parks and palaces of Sanssouci, Germany's largest World Heritage Site, as well as other palaces such as the Orangery Palace, the New Palace, the Cecilienhof Palace, or the Charlottenhof Palace.
+                    //- p Please visit the following sites for more information:
+                    //-   ul
+                    //-     li #[a(href = 'https://www.potsdam-tourism.com/en/home') potsdam-tourism.com]
+                    //-     li #[a(href = 'https://www.tripadvisor.com/Attractions-g187330-Activities-Potsdam_Brandenburg.html') tripadvisor.com]
+        .row.justify-content-center
+            .col-custom.col-padding
+
+                +h2('Transportation')
+                //- p 
+                //-   strong By car:
+                //-   |  Chur has a direct motorway connection (A 13). If you come from Zurich take the motorway A3 to San Bernadino and 
+                //-   |  then at Sargans change to the A13 in the direction of Chur. If you come from Italy, follow the A13 in the direction of Chur/Zurich.
+
+                //- p
+                //-   strong By train:
+                //-   |  There are trains from Zurich central station and from Zurich airport to Chur central station. For some connections you have 
+                //-   |  to change trains in St.Margrethen. For more information look at www.bahn.de.
+
+                //- p
+                //-   strong By plane:
+                //-   |  The best option is to take a plane to Zurich airport and then take the train to Chur. 
+                ol 
+                    li #[strong Guangzhou Baiyun Airport]
+                        ul 
+                            li #[strong Option 1:] Located 90 km from Guangzhou Baiyun Airport, take Metro Line 3 (North Extension) to Tianhe Sports Center Station, transfer to Metro Line 3 to Kecun Station, then transfer to Metro Line 8 to Wanshengwei Station, and finally transfer to Metro Line 4 to Jiaomen Station. The journey takes approximately 1 hour and 50 minutes. From there, walk about 400 meters south along Fenghuang Avenue, then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 2:] Located 90 km from Guangzhou Baiyun Airport, take Metro Line 3 (North Extension) to Tianhe Sports Center Station, transfer to Metro Line 3 to Zhujiang New Town Station, then transfer to Metro Line 5 to Chebeinan Station, and finally transfer to Metro Line 4 to Jiaomen Station. The journey takes approximately 1 hour and 50 minutes. From there, walk about 400 meters south along Fenghuang Avenue, then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 3:] Located 90 km from Guangzhou Baiyun Airport, the taxi fare is approximately 350 CNY (including about 40 CNY for toll fees).
+                    li #[strong Shenzhen Bao'an Airport]
+                        ul 
+                            li #[strong Option 1:] Located 63 km from Shenzhen Bao'an Airport, take Shenzhen Metro Line 11 (Airport Line) to Qianhaiwan, transfer to Shenzhen Metro Line 5 (Loop Line) to Shenzhen North Station. The journey takes about 50 minutes. Take the high-speed rail to Qingsheng High-Speed Rail Station (departure times from Shenzhen North High-Speed Rail Station: 8:00、11:46、12:07、13:09、13:14、13:56、15:20、15:43、17:34, and 18:38; the high-speed rail journey takes about 21 minutes and costs 49.5 CNY). After getting off the high-speed rail, take Metro Line 4 to Jiaomen Station, which takes about 12 minutes. Then walk about 400 meters south along Fenghuang Avenue, and then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 2:] Located 63 km from Shenzhen Bao'an Airport, the taxi fare is approximately 260 CNY (including about 60 CNY for toll fees).
+                    li #[strong Guangzhou South Railway Station]
+                        ul 
+                            li #[strong Option 1:] Located 42 km from Guangzhou South Railway Station, take Metro Line 22 to Panyu Square Station, transfer to Metro Line 18 to Hengli Station. The metro journey takes about 30 minutes. From Exit D, walk to the Hengli Station Bus Stop. Take the Nansha G1 bus to Jiaomencun Paifang Station. Walk about 100 meters south along Fengze West Road, then walk about 100 meters east. The total walking time is about 5 minutes.
+                            li #[strong Option 2:] Located 42 km from Guangzhou South Railway Station, take Metro Line 7 to University City South Station, transfer to Metro Line 4 to Jiaomen Station. The journey takes about 1 hour and 5 minutes. Then walk about 400 meters south along Fenghuang Avenue, and then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 3:] Located 42 km from Guangzhou South Railway Station, the taxi fare is approximately 130 yuan (including about 15 yuan for toll fees).
+                    li #[strong Guangzhou Railway Station]
+                        ul 
+                            li #[strong Option 1:] Located 58 km from Guangzhou Railway Station, take Metro Line 5 to Chebeinan Station, transfer to Metro Line 4 to Jiaomen Station. The journey takes about 1 hour and 20 minutes. Then walk about 400 meters south along Fenghuang Avenue, and then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 2:] Located 58 km from Guangzhou Railway Station, the taxi fare is approximately 200 CNY (including about 20 CNY for toll fees).
+                    li #[strong Shenzhen North Railway Station]
+                        ul 
+                            li #[strong Option 1:] Located 76 km from Shenzhen North Railway Station, take the high-speed train to Qingsheng Station (departure times from Shenzhen North Railway Station: 8:00, 11:46, 13:09, 13:14, 13:48, 15:20, 17:45, 17:51, and 18:38). The high-speed train journey takes about 21 minutes, and the ticket price is 49.5 CNY. After getting off the high-speed train, take Metro Line 4 to Jiaomen Station, which takes about 12 minutes. Then walk about 400 meters south along Fenghuang Avenue, and then walk about 500 meters west. The total walking time is about 15 minutes.
+                            li #[strong Option 2:] Located 76 km from Shenzhen North Railway Station, the taxi fare is approximately 270 CNY (including about 60 CNY for toll fees).
+                    
 
 
-    .row.justify-content-center
-      .col-custom.col-padding
-        
-        +h2('Accomodation')
-        //- p There are really many hotels in Chur. Here is a short list of well-known hotels:
-        //-   ul
-        //-     li Reception
-        //-     li Banquet (Zhujiang River Cruise)
-        //-     li Tianhou Temple
-        //-     li HKUST-GZ brand new campus tour
-        p More information will follow in the coming days and weeks.
+        .row.justify-content-center
+            .col-custom.col-padding(id="accommodation")
 
-            
-          //- p See #[a(href = 'https://www.chur.graubuenden.ch/de/angebot/gaestekarte-chur') chur.graubuenden.ch]
+                +h2('Accommodation')
+                p We offer on-campus accommodations. If you wish to make a reservation, please send an email to #[a(href="mailto: vinciinfo23@gmail.com") vinciinfo23@gmail.com]. For each person staying in a room, please provide: full name, phone number, gender, check-in date, check-out date, and preferred room type. 
+                p Below is detailed information about the dormitories:
+                //- p There are really many hotels in Chur. Here is a short list of well-known hotels:
+                //-   ul
+                //-     li Reception
+                //-     li Banquet (Zhujiang River Cruise)
+                //-     li Tianhou Temple
+                //-     li HKUST-GZ brand new campus tour
+                //- p More information will follow in the coming days and weeks.
+                test
+
+                    .col-lg-10.col-11.mt-4
+                        table.table.table-sm.text-end.table-borderless.align-middle.table-hover
+                            thead
+                                tr.text-center.text-muted
+                                    //- th(scope = 'col').border-end.border-dark
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Registration category
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Regular
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Student
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Room Type
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Studio
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark 1-Bedroom
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark 1-Br + Study
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Desposit
+                            tbody
+                                //- tr.text-center.border-bottom.border-dark
+                                //-     //- td(scope = 'row').text-start #[ Extra Social Event**]
+                                //-     td(colspan = '3').border.border-dark.pe-4 #[ FULL PROGRAM]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row').border-end.border-dark.border #[ Price (CNY/day)]
+                                    td.border-end.pe-4.border-dark.border #[ 200RMB]
+                                    td.border-end.pe-4.border-dark.border #[ 280RMB]
+                                    td.border-end.pe-4.border-dark.border #[ 350RMB]
+                                    td.border-end.pe-4.border-dark.border #[ No Need]
+                p #[strong Note:] Daily charge, breakfast is not included. Drinking water for more than one week should be paid at your own expense (350ml drinking water, 1 bottle/day for short-term multiple rooms, 2 bottles/day for other rooms). Water and electricity should be charged for more than 30 days. Compensation should be negotiated in case of damage to items or facilities.
+                ul 
+                    li #[strong Studio:]
+                        ul 
+                            li #[strong Position:] HKUST (GZ) 5C
+                            li #[strong Layout:] integrated bedroom (1.5m bed), living room and dining room.
+                            li #[strong Amenities:] One 1.5m bed, bedding pillow, towel, disposable toiletries, wardrobe, dining table, refrigerator, WIFI.
+                    li #[strong 1-Bedroom:]
+                        ul 
+                            li #[strong Position:] HKUST (GZ) 5C/6C
+                            li #[strong Layout:] One independent room (with 1.5m/1.8m bed), one independent bathroom, integrated living room, dining room and kitchen.
+                            li #[strong Amenities:] One 1.5m/1.8m bed, bedding pillow, towel, disposable toiletries, wardrobe, dining table, refrigerator, WIFI.
+                    li #[strong 1-Br + Study:]
+                        ul 
+                            li #[strong Position:] HKUST (GZ) 6C
+                            li #[strong Layout:] One independent bathroom, kitchen, one living room, one bedroom, one study room with desk and chair, one balcony.
+                            li #[strong Amenities:] 1.8m bed (maximum two people), bedding and pillows, towels, disposable toiletries, wardrobe, washing machine, refrigerator, complimentary WIFI.
+                p #[strong Remark:]
+                ul 
+                    li #[strong Check-in:] On the day of check-in, after 15:00, please proceed to the front desk on the ground floor of the corresponding guest room building to complete the accommodation registration with the housing management.
+                    li #[strong Check-out:] On the day of check-out, please ensure all personal belongings are taken from the room by 13:00, and return the room key to the front desk.
+                    li #[strong Luggage Storage:] If needed, you can temporarily store your luggage at the front desk and remember to retrieve it promptly.
+                    li #[strong Note:] Guests are not allowed to bring pets into the rooms.
+                p #[strong Front Desk Contact for Guest Rooms:]
+                ul 
+                    li #[strong Building 6C:] 020-88331002
+                    li #[strong Building 5C:] 020-88331003
+                img(src = require('/img/photos/map.png') alt = 'campus').figure-img.img-fluid
+
+                    //- p See #[a(href = 'https://www.chur.graubuenden.ch/de/angebot/gaestekarte-chur') chur.graubuenden.ch]

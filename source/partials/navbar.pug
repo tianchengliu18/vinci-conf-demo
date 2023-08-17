@@ -1,27 +1,27 @@
 section.container
-  .row.justify-content-center
+    .row.justify-content-center
 
-    .col-custom
+        .col-custom
 
-      ul.nav.navbar
-        // li.nav-item.navbar-brand.mx-0
-        //  a(href = '/').nav-link #[img(src = require('../img/vinci-logo-sm.svg') alt = 'vinci-logo')]
+            ul.nav.navbar
+                // li.nav-item.navbar-brand.mx-0
+                //  a(href = '/').nav-link #[img(src = require('../img/vinci-logo-sm.svg') alt = 'vinci-logo')]
 
-        each page in pages
-          li.nav-item.d-none.d-xl-block
-            if(page.url === active.url)
-              .active
-              a(href= page.url + '.html').nav-link.disabled= page.title
-            else
-              a(href= page.url + '.html').nav-link= page.title
+                each page in pages
+                    li.nav-item.d-none.d-xl-block
+                        if(page.url === active.url)
+                            .active
+                            a(href= page.url + '.html').nav-link.disabled= page.title
+                        else
+                            a(href= page.url + '.html').nav-link= page.title
 
-        li.nav-item.dropdown.d-xl-none.navbar-light
-          a(data-bs-toggle = 'dropdown' href = '#' role = 'button' aria-expanded = 'false').nav-link.dropdown-toggle #[span.navbar-toggler-icon.me-2] Navigation 
-          ul.dropdown-menu
-            each page in pages
-              li
-                if(page.url === active.url)
-                  .active
-                  a(href= page.url + '.html').dropdown-item.disabled= page.title
-                else
-                  a(href= page.url + '.html').dropdown-item= page.title
+                li.nav-item.dropdown.d-xl-none.navbar-light
+                    a(data-bs-toggle = 'dropdown' href = '#' role = 'button' aria-expanded = 'false').nav-link.dropdown-toggle #[span.navbar-toggler-icon.me-2] Navigation 
+                    ul.dropdown-menu
+                        each page in pages
+                            li
+                                if(page.url === active.url)
+                                    .active
+                                    a(href= page.url + '.html').dropdown-item.disabled= page.title
+                                else
+                                    a(href= page.url + '.html').dropdown-item= page.title
