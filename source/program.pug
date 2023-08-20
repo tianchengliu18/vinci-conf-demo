@@ -2,255 +2,508 @@ extends partials/site
 
 block content
 
-  section.container
+    section.container
 
-    .row.justify-content-center
-      .col-custom.col-padding
-      
-
-        +h2('Program')
-        dt TBA
-        p 
-        //-   | More information will follow in the coming days and weeks.
-        //-   | All presentations will take place virtually, using the event system Hopin (#[a(href="https://hopin.com/events/vinci-21") visit the event]).
-          | Prelimary program. All times are given in CEST.
-
-        ul.list
-          li.list-item #[a(href="program.html#day01") August 16, 2022 / Day 1 / Tuesday]
-          li.list-item #[a(href="program.html#day02") August 17, 2022 / Day 2 / Wednesday]
-          li.list-item #[a(href="program.html#day03") August 18, 2022 / Day 3 / Thursday]
+        .row.justify-content-center
+            .col-custom.col-padding
 
 
-        table.table.table-borderless.align-top.table-program
-          thead
-            tr.border-bottom.border-dark
-              th(scope = 'col' colspan = '1') #[.fw-light Time]
-              th(scope = 'col' colspan = '1') #[a(name = 'day01') Tuesday / August 16, 2022 / Day One]
-          tbody
-            tr.text-muted
-              td 08:00
-              td Registration Opens
-            tr
-              td 09:00
-              td #[strong Opening of VINCI]
-            tr
-              td(rowspan = '2') 09:30
-              td.d-flex #[strong Keynote Talk 1]
-                small.ms-auto Session Chair: Michael Burch
-            tr
-              td Visual Analytics for Industrial Data Analysis #[sup KN] <br>
-                small Tobias Schreck, TU Graz, Austria
-            tr.text-muted
-              td 10:30
-              td Coffee Break
-            tr 
-              td(rowspan = '2') 11:00 
-              td.d-flex #[strong Paper Session 1: Users and Design]
-                small.ms-auto Session Chair: Günter Wallner
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 How Students Design Visual Interfaces for Information Visualization Tools #[sup FP] <br>
-                    small Michael Burch
-                  li.pb-1 Abstract and Concrete Materials: What to use for Visualization Onboarding? #[sup FP] <br>
-                    small Christina Stoiber, Florian Grassinger and Wolfgang Aigner
-                  li Content-Driven Layout for Visualization Design #[sup FP]<br>
-                    small Yngve Sekse Kristiansen, Laura Garrison and Stefan Bruckner
+                +h2('Program')
+                //- dt TBA
+                p 
+                //-   | More information will follow in the coming days and weeks.
+                //-   | All presentations will take place virtually, using the event system Hopin (#[a(href="https://hopin.com/events/vinci-21") visit the event]).
+                    | Prelimary program. All times are given in CEST.
 
-            tr.text-muted
-              td 12:30
-              td Lunch Break
-            tr
-              td(rowspan = '2') 14:00
-              td.d-flex #[strong Poster Session 1]
-                small.ms-auto Session Chair: Sabrina Lindau
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 Visual Analysis of Geospatial Properties #[sup PP] <br>
-                    small Yves Staudt, Michael Burch, Alexander van Schie and Heiko Rölke
-                  li.pb-1 A Benchmark for the Use of Topic Models for Text Visualization Tasks #[sup PP] <br>
-                    small Daniel Atzberger, Tim Cech, Willy Scheibel, Daniel Limberger, Jürgen Döllner and Matthias Trapp
-                  li.pb-1 π-Experience – Making 62.8 trillion digits come alive #[sup PP] <br>
-                    small Alexander van Schie, Giada Zacheo and Bruno Frey
+                ul.list
+                    //- li.list-item #[a(href="program.html#day01") September 22, 2023 / Day 1 / Friday]
+                    //- li.list-item #[a(href="program.html#day02") September 23, 2023 / Day 2 / Saturday]
+                    //- li.list-item #[a(href="program.html#day03") September 24, 2023 / Day 3 / Sunday]
+                    li.list-item #[ All times are given in China (UTC+8).]
 
-            tr.text-muted
-              td 15:00
-              td Coffee Break + Poster Session
-            tr
-              td(rowspan = '2') 16:00
-              td.d-flex #[strong Paper Session 2: Perception]
-                small.ms-auto Session Chair: Michael Burch
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 A Comparative Study of Color Between Abstract Paintings, Oil Paintings and Chinese Ink Paintings  #[sup FP] <br>
-                    small Zhenbao Fan, Yixuan Zhu, Christine Yan, Yufan Li and Kang Zhang
-                  li.pb-1 Gaze-Guided Class Activation Mapping: Leverage Human Visual Attention for Network Attention in Chest X-rays Classification #[sup FP] <br>
-                    small Hongzhi Zhu, Septimiu Salcudean and Robert Rohling
-                  li Conditions of Preserving Mental Images by Contour Deformation #[sup SP]<br>
-                    small Kazuo Misue
+                test
 
-            tr.text-muted
-              td 18:30 - 22:00
-              td Reception 
+                    .col-lg-10.col-11.mt-4
+                        table.table.table-sm.text-end.table-borderless.align-middle.table-hover
+                            thead
+                                tr.text-center.text-muted
+                                    th(scope = 'col').border-end.border-dark
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Time
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Registration category
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Regular
+                                    //- th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark Student
+                                    th(scope = 'col' colspan = '1').border.border-bottom-0.border-dark #[a(href="program.html#day01" style="color: black;") Friday 22]
+                                    th(scope = 'col' colspan = '2').border.border-bottom-0.border-dark #[a(href="program.html#day02" style="color: black;") Saturday 23]
+                                    th(scope = 'col' colspan = '2').border.border-bottom-0.border-dark #[a(href="program.html#day03" style="color: black;") Sunday 24]
 
-        table.table.table-borderless.align-top.table-program
-          thead
-            tr.border-bottom.border-dark
-              th(scope = 'col' colspan = '1') #[.fw-light Time]
-              th(scope = 'col' colspan = '1') #[a(name = 'day02') Wednesday / August 17, 2022 / Day Two]
-          tbody
-            tr
-              td(rowspan = '2') 09:30
-              td.d-flex #[strong Keynote Talk]
-                small.ms-auto Session Chair: Michael Burch
-            tr
-              td Aesthetic Measurement of Paintings #[sup KN] <br>
-                small Kang Zhang, Computational Media and Arts, Hong Kong University of Science and Technology, China
-
-            tr.text-muted
-              td 10:30
-              td Coffee Break
- 
-            tr 
-              td(rowspan = '2') 11:00 
-              td.d-flex #[strong Paper Session 3: Techniques]
-                small.ms-auto Session Chair: Tobias Schreck
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 Group Diagrams for Simplified Representation of Scanpaths #[sup FP] <br>
-                    small Peter Schäfer, Nils Rodrigues, Daniel Weiskopf and Sabine Storandt
-                  li Accelerating GPU Rendering of 2D Visualizations Using Resolution Scaling and Temporal Reconstruction #[sup FP] <br>
-                    small Michael Becher, Moritz Heinemann, Thomas Marmann, Guido Reina, Daniel Weiskopf and Thomas Ertl
-                  li Animated Transitions for Small-Scale Visualizations #[sup FP] <br>
-                    small Franziska Huth, Tanja Blascheck, Steffen Koch and Thomas Ertl
-
-            tr.text-muted
-              td 12:30
-              td Lunch Break
-
-            tr 
-              td(rowspan = '2') 14:00 
-              td.d-flex #[strong Poster Session 2]
-                small.ms-auto Session Chair: Christina Stoiber
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 An Inertial Representation of Search Results #[sup PP] <br>
-                    small Yannis Panagis and Robert Spence
-                  li.pb-1 Investigating Color-Object Associations With Eye Tracking #[sup PP] <br>
-                    small Sabrina Zahner, Edina Mesini, Keshina Karunananthan, Gabriel Lüchinger, Sabrina Lindau and Michael Burch
-                  li Improving data monitoring systems in biosphere reserves information #[sup PP] <br>
-                    small Nadine Christen, Michael Schlotter and Juliane Streitberg
-                  li Explorative Data Analysis of the Number π #[sup PP] <br>
-                    small Yves Staudt, Thomas Keller, Heiko Rölke and Michael Burch
-
-            tr.text-muted
-              td 15:00
-              td Coffee Break + Poster Session
-
-            tr
-              td(rowspan = '2') 16:00
-              td.d-flex #[strong Panel Discussion]
-                small.ms-auto Session Chair: Michael Burch
-            tr 
-              td How the industry and visual analytics play together - Solved problems and open challenges
-                ul.px-0
-                  li.pb-1.small Robert Spence, Imperial College London, United Kingdom
-                  li.pb-1.small Tobias Schreck, TU Graz, Austria
-                  li.pb-1.small Günter Wallner, Johannes Kepler University Linz, Austria
-                  li.pb-1.small Yves Staudt, University of Applied Sciences Chur, Switzerland
-            tr.text-muted
-              td 19:00 - 23:00
-              td Social Event and Best Paper Awards
+                            //- thead
+                            //-   tr
+                            //- td.border-end.border-dark
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 ACM
+                            //- td.border.border-top-0.border-dark.pe-4 Non-ACM
+                            //- td.border.border-top-0.border-dark.pe-4 ACM
+                            tbody
+                                //- tr.text-center.border-bottom.border-dark
+                                //-     //- td(scope = 'row').text-start #[ Extra Social Event**]
+                                //-     td(colspan = '3').border.border-dark.pe-4 #[ FULL PROGRAM]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
+                                    td.border-end.pe-4.border-dark.border #[ 8:30 ]
+                                    td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(colspan='2').border-end.pe-4.border-dark.border #[ Opening]
+                                    td(colspan='2').border-end.pe-4.border-dark.border
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
+                                    td.border-end.pe-4.border-dark.border #[ 9:00 ]
+                                    //- td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(colspan='2' style="background-color: #AFDAF2;").border-end.pe-4.border-dark.border #[a(href="program.html#k1" style="color: black;") Keynote 1]
+                                    td(colspan='2' style="background-color: #AFDAF2;").border-end.pe-4.border-dark.border #[a(href="program.html#k3" style="color: black;") Keynote 3]
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
+                                    td.border-end.pe-4.border-dark.border #[ 10:00 ]
+                                    //- td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(colspan='4').border-end.pe-4.border-dark.border #[ Coffee Break]
+                                tr.text-center.border-bottom.border-dark
+                                    td.border-end.pe-4.border-dark.border #[ 10:20 ]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t1" style="color: black;") Tech. S1]
+                                    td(colspan='1' style="background-color: #DFDDED").border-end.pe-4.border-dark.border #[a(href="program.html#a1" style="color: black;") Art S1]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t3" style="color: black;") Tech. S3]
+                                    td(colspan='1' style="background-color: #DFDDED").border-end.pe-4.border-dark.border #[a(href="program.html#a3" style="color: black;") Art S3]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row' rowspan='1').border-end.border-dark.border #[ Midday ]
+                                    td.border-end.pe-4.border-dark.border #[ 11:50 ]
+                                    td(colspan='4').border-end.pe-4.border-dark.border #[ Lunch]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Afternoon ]
+                                    td.border-end.pe-4.border-dark.border #[ 13:30 ]
+                                    td(colspan='2' style="background-color: #AFDAF2;").border-end.pe-4.border-dark.border #[a(href="program.html#k2" style="color: black;") Keynote 2]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t4" style="color: black;") Tech. S4]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t5" style="color: black;") Tech. S5]
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
+                                    td.border-end.pe-4.border-dark.border #[ 14:30 ]
+                                    //- td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(colspan='4').border-end.pe-4.border-dark.border #[ Coffee Break]
+                                tr.text-center.border-bottom.border-dark
+                                    td.border-end.pe-4.border-dark.border #[ 14:50 ]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t2" style="color: black;") Tech. S2]
+                                    td(colspan='1' style="background-color: #DFDDED").border-end.pe-4.border-dark.border #[a(href="program.html#a2" style="color: black;") Art S2]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t6" style="color: black;") Tech. S6]
+                                    td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t7" style="color: black;") Tech. S7]
+                                tr.text-center.border-bottom.border-dark
+                                    //- td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
+                                    td.border-end.pe-4.border-dark.border #[ 16:20 ]
+                                    //- td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(colspan='2').border-end.pe-4.border-dark.border #[ Exhibition tour]
+                                    td(colspan='2').border-end.pe-4.border-dark.border #[ Closing]
+                                tr.text-center.border-bottom.border-dark
+                                    td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Evening ]
+                                    td.border-end.pe-4.border-dark.border #[ 18:30 ]
+                                    td(colspan='2').border-end.pe-4.border-dark.border #[ Banquet]
+                                    td(colspan='2').border-end.pe-4.border-dark.border
 
 
-        table.table.table-borderless.align-top.table-program
-          thead
-            tr.border-bottom.border-dark
-              th(scope = 'col' colspan = '1') #[.fw-light Time]
-              th(scope = 'col' colspan = '1') #[a(name = 'day03') Thursday / August 18, 2022 / Day Three]
-          tbody
-            tr 
-              td(rowspan = '2') 09:20 
-              td.d-flex #[strong Paper Session 4: Applications]
-                small.ms-auto Session Chair: Günter Wallner
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 LegisLatio: A visualization Tool for Legislative Roll-call Vote Data #[sup FP] <br>
-                    small Gonzalo Mendez, Oscar Moreno and Patricio Mendoza
-                  li ICEVis: Interactive Clustering Exploration for tumor sub-region analysis in multiparametric cancer imaging #[sup SP] <br>
-                    small Eric Mörth, Tanja Eichner, Ingfrid Haldorsen, Stefan Bruckner and Noeska Smit
-                  li Visual Analysis of Spatio-Temporal Earthquake Events  #[sup SP] <br>
-                    small Michael Burch, Indre Tauroseviciute and Guillermo Mateos Guridi
-
-            tr.text-muted
-              td 10:30
-              td Coffee Break
-
-            tr 
-              td(rowspan = '2') 11:00 
-              td.d-flex #[strong Paper Session 5: Interaction]
-                small.ms-auto Session Chair: Michael Burch
-            tr 
-              td
-                ul.px-0
-                  li.pb-1 Investigation of Two Complexity Sources for Statistical Graphs #[sup FP] <br>
-                    small Mark Livingston and Derek Brock
-                  li Toward In-Situ Authoring of Situated Visualization with Chorded Keyboards #[sup SP] <br>
-                    small Sarah Dosdall, Katrin Angerbauer, Leonel Merino, Michael Sedlmair and Daniel Weiskopf
-                  li MolecuSense: Using Force-Feedback Gloves for Creating and Interacting with Ball-and-Stick Molecules in VR #[sup SP] <br>
-                    small Patrick Gebhardt, Xingyao Yu, Andreas Köhn and Michael Sedlmair
-
-            tr
-              td(rowspan = '2') 12:10
-              td.d-flex #[strong Closing and VINCI 2023]
-                small.ms-auto Michael Burch and Kang Zhang
-            tr
-              td <br>
-                small 
-                
-            tr.text-muted
-              td 12:30
-              td Lunch Break
-
-            tr.text-muted
-              td 14:00
-              td After Conference Events
+                table.table.table-borderless.align-top.table-program
+                    thead
+                        tr.border-bottom.border-dark
+                            th(scope = 'col' colspan = '1') #[.fw-light Time]
+                            th(scope = 'col' colspan = '1') #[a(name = 'day01') Friday / September 22, 2023 / Day One]
+                    tbody
+                        tr.text-muted
+                            td(rowspan='2') 8:30-16:50
+                            td Reception
 
 
-    .row.justify-content-center
-      .col-custom.col-padding
+                table.table.table-borderless.align-top.table-program
+                    thead
+                        tr.border-bottom.border-dark
+                            th(scope = 'col' colspan = '1') #[.fw-light Time]
+                            th(scope = 'col' colspan = '1') #[a(name = 'day02') Saturday / September 23, 2023 / Day Two]
+                    tbody
+                        //- tr.text-muted
+                        //-     td 08:00
+                        //-     td Registration Opens
+                        tr
+                            td 08:30-9:00
+                            td #[strong Opening of VINCI 2023]
+                        //- tr 
+                        //-     td
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td(rowspan = '2') #[a(name='k1') 09:00-10:00]
+                            td.d-flex #[strong Keynote Talk 1]
+                                //- small.ms-auto Session Chair: Michael Burch
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td 
+                                span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
+                                span Visual Communication: Tools, Domain Motivation, and Citizen Responsibility  <br>
+                                small Prof. Dr. Baoquan Chen
+                        tr.text-muted
+                            td 10:00-10:20
+                            td Coffee Break
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td(rowspan = '2') #[a(name = 't1') 10:20-11:50]
+                            td.d-flex #[strong Tech. Paper Session 1: Visual Communication]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #FCE4D6") 
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span The Landscape of Visual Information Communication and Interaction Research <br>
+                                        small Gonzalo Gabriel Méndez, Oscar Moreno and Patricio Mendoza
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Storytelling in Frozen Frontier: Exploring Graphic-Based Approach for Creating Interactive Story Maps in Antarctica <br>
+                                        small Liangwei Wang, Zhan Wang, Xi Zhao and Wei Zeng
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span EmotionVis: Affective Visualization with Physical Devices <br>
+                                        small Xinyi Huang, Yu Liu and Lingyun Yu
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span FitYou: A Personalized Dashboard for Health Data <br>
+                                        small Michael Burch, Alexander van Schie, Giada Zacheo, Amina Buzimkic, Andreas la Roi and Yves Staudt
+                        tr 
+                            td
+                        tr(style="border-left: 7px solid #DFDDED;")
+                            td(rowspan = '2') #[a(name = 'a1') 10:20-11:50]
+                            td.d-flex #[strong Art Paper Session 1: Cultural Heritage and Soft Datafication]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #DFDDED")
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Naturality: A Natural Reflection of Chinese Calligraphy <br>
+                                        small Bingyuan Wang, Kang Zhang and Zeyu Wang
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span A Study of the Fractal Design of Decorative Patterns in Chaoshan Drawnwork: An Illustration of the Julia Set <br>
+                                        small Jiajun Chen and Ya Zhang
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Datafication textile skins, visual and digital image from ubiquitous and situated interaction <br>
+                                        small Maria Jose Rios Araya and Ricardo Vega Mora
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Calligraphy to Image <br>
+                                        small Haichuan Lin
+                        
 
-        +h2('Presentation Times')
-        p The following presentation times apply to the different paper types:
+                        tr.text-muted
+                            td 11:50-13:30
+                            td Lunch Break
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td(rowspan = '2') #[a(name = 'k2') 13:30-14:30]
+                            td.d-flex #[strong Keynote Talk 2]
+                                //- small.ms-auto Session Chair: Sabrina Lindau
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td 
+                                span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
+                                span Interactive assistive surgery with the support of a smart digital surgeon and a social robot <br>
+                                small Prof. Dr. Nadia Magnenat Thalmann
 
-        .col-lg-10.col-11.mt-4
-          table.table.table-sm.table-borderless.align-middle.table-hover
-            thead
-              tr.text-end
-                th(scope = 'col') 
-                th(scope = 'col') Presentation Time
-                th(scope = 'col') Questions
-            tbody
-              tr.border-bottom.border-muted
-                td FP / Full Paper
-                td.text-end 25 Minutes 
-                td.text-end  5 Minutes
-              tr.border-bottom.border-muted
-                td SP / Short Paper
-                td.text-end 15 Minutes 
-                td.text-end  5 Minutes
-              tr.border-bottom.border-muted
-                td PP / Poster Paper
-                td.text-end 10 Minutes 
-                td.text-end 5 Minutes
-              tr.border-muted
-                td KN / Keynote
-                td.text-end 45 Minutes
-                td.text-end 15 Minutes
+                        tr.text-muted
+                            td 14:30-14:50
+                            td Coffee Break
+                        tr(style="border-left: 7px solid #FCE4D6") 
+                            td(rowspan = '2') #[a(name = 't2') 14:50-16:20]
+                            td.d-flex #[strong Tech. Paper Session 2: Visual Analytics]
+                                //- small.ms-auto Session Chair: Michael Burch
+                        tr(style="border-left: 7px solid #FCE4D6") 
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Visual Analysis of Air Pollutant Propagation Path and Pollution Source <br>
+                                        small Yan Hao, Chongke Bi, Lu Yang, Xiaobin Qiu, Yunlong Li and Ce Yu
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Does Where You are Matter? A Visual Analytics System for COVID-19 Transmission Based on Social Hierarchical Perspective <br>
+                                        small Jianing Hao, Xibin Jiang, Qing Shi and Wei Zeng
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span A Visual Analytic System for Ranking Multi-attribute Data Using Multi-level Pareto Frontier <br>
+                                        small Sihan Pan and Jun Tao
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Visual Analytics of the Effect of Age on the Spatial Learning Capabilities of Sleep-Deprived Drosophila <br>
+                                        small Kevin Zhao, Dina Ellsworth and Craig Queenan
+                        
+                        tr 
+                            td
+                        
+                        tr(style="border-left: 7px solid #DFDDED;")
+                            td(rowspan = '2') #[a(name = 'a2') 10:20-11:50]
+                            td.d-flex #[strong Art Paper Session 2: Art Museums and Audience Interaction]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #DFDDED")
+                            td
+                                ul.px-0
+                                    //- li.pb-1 
+                                    //-     span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                    //-     span  <br>
+                                    //-     small 
+                                    //- li.pb-1 
+                                    //-     span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                    //-     span  <br>
+                                    //-     small 
+                                    //- li.pb-1 
+                                    //-     span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                    //-     span  <br>
+                                    //-     small 
+                                    //- li.pb-1 
+                                    //-     span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                    //-     span  <br>
+                                    //-     small 
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Visual exploration of color usage in Vincent van Gogh’s Paintings <br>
+                                        small Xinyi Ding, Yejuan Xie, Jielin Jing, Fei Du and Chengtao Ji
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Quantifying Collection Lag in European Modern and Contemporary Art Museums <br>
+                                        small Mar Canet Sola, Antonina Korepanova, Ksenia Mukhina and Maximilian Schich
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span The Viewer as a Source of the Artwork <br>
+                                        small Raivo Kelomees
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span MOONMENT: Designing Gesture-based Interaction with Acousto-Optic Feedbacks <br>
+                                        small Jiayi Yao and Liang Tan
+
+                        tr.text-muted
+                            td 16:20-16:50
+                            td Exhibition tour
+                        
+
+                        tr.text-muted
+                            td Evening
+                            td Banquet
+
+                table.table.table-borderless.align-top.table-program
+                    thead
+                        tr.border-bottom.border-dark
+                            th(scope = 'col' colspan = '1') #[.fw-light Time]
+                            th(scope = 'col' colspan = '1') #[a(name = 'day03') Sunday / September 24, 2023 / Day Three]
+                    tbody
+                        tr
+                            td
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td(rowspan = '2') #[a(name = 'k3') 09:00-10:00]
+                            td.d-flex #[strong Keynote Talk 3]
+                                //- small.ms-auto Session Chair: Michael Burch
+                        tr(style="border-left: 7px solid #AFDAF2")
+                            td 
+                                span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
+                                span Transdisciplinary experiences in Data Visualization and beyond <br>
+                                small Prof. Dr. Doris Kosminsky
+                        tr.text-muted
+                            td 10:00-10:20
+                            td Coffee Break
+                        tr(style="border-left: 7px solid #FCE4D6")  
+                            td(rowspan = '2') #[a(name = 't3') 10:20-11:50]
+                            td.d-flex #[strong Tech. Paper Session 3: Perception and Design]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #FCE4D6")  
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Kandinsky’s Color-Shape Associations in Chinese Context: Do Personality and Affect Matter? <br>
+                                        small Zixu Gong, Kang Zhang and Rongrong Chen
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Individual Visual Working Memory Capacity Affects Aesthetic Appreciation of Chinese Ink Painting <br>
+                                        small Dingning Long, Rongrong Chen
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span An Interactive System Design Based on Biofeedback and Breathing Exercise <br>
+                                        small Xueying Wen and Liang Tan
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Metaphor Design of Dockless Bike-sharing Based on Spatio-temporal Geographic Data <br>
+                                        small Kelin Li, Hong Yin, Dong Li, Kang Zhang and Changbo Wang
+                        
+                        tr
+                            td
+                        
+                        tr(style="border-left: 7px solid #DFDDED")
+                            td(rowspan = '2') #[a(name = 'a3') 10:20-11:50]
+                            td.d-flex #[strong Art Paper Session 3: Extended Cinema]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #DFDDED")
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Urban Symphony: An AI and Data-Driven Approach to Real-Time Animation for Public Digital Art <br>
+                                        small Urban Symphony: An AI and Data-Driven Approach to Real-Time Animation for Public Digital Art
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Simonstown: An AI-facilitated Interactive Story of Love, Life, and Pandemic <br>
+                                        small Bingyuan Wang, Pinxi Zhu, Hao Li, David Kei-Man Yip and Zeyu Wang
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Anticipating 2020s: Deep Learning Methods for Generating Videos from Found Footage Toward a Database Aesthetic <br>
+                                        small Amalia Foka
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span From Expanded Cinema to Extended Reality: How AI Can Expand and Extend Cinematic Experiences <br>
+                                        small Junrong Song, Bingyuan Wang, Zeyu Wang and David Kei-Man Yip
+                        
+
+                        tr.text-muted
+                            td 11:50-13:30
+                            td Lunch Break
+                        
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td(rowspan = '2') #[a(name = 't4') 10:20-11:50]
+                            td.d-flex #[strong Tech. Paper Session 4: Extended Reality]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Development of an immersive simulator for improving student chemistry learning efficiency <br>
+                                        small Shan Jin, Yuyang Wang, Lik-Hang Lee, Xinyi Luo and Pan Hui
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span PMM: A Smart Shopping Guider Based on Mobile AR <br>
+                                        small Jiahao Han, Zhifei Ding, Yuxuan Chen, Lingxin Yu, Siru Chen and Richen Liu
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Work vs. Leisure – Differences in Avatar Characteristics Depending on Social Situations <br>
+                                        small Natalie Hube, Melissa Reinelt, Kresimir Vidackovic and Michael Sedlmair
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span LOOP Meditation: Enhancing Novice's VR Meditation Experience with Physical Movement <br>
+                                        small Shihan Fu, Liangliang Qiang and Wei Zeng
+                        
+                        tr 
+                            td
+                        
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td(rowspan = '2') #[a(name = 't5') 10:20-11:50]
+                            td.d-flex #[strong Tech. Paper Session 5: Finance]
+                                //- small.ms-auto Session Chair: Günter Wallner
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span NFTeller: Dual-centric Visual Analytics for Assessing Market Performance of NFT Collectibles <br>
+                                        small Yifan Cao, Meng Xia, Kento Shigyo, Furui Cheng, Qianhang Yu, Xingxing Yang, Wei Zeng, Yang Wang and Huamin Qu
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Visual Analytics for Phishing Scam Identification in Blockchain Transactions with Multiple Model Comparison <br>
+                                        small Jiaqi Dong, Zishu Qin, Zhou Fang, Xuan Chen, Zengfeng Huang, Haoyun Guo, Richen Liu, Cagatay Turkay and Siming Chen
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span BiverWordle: Visualizing Stock Market Sentiment with Financial Text Data and Trends <br>
+                                        small Lei Xia, Yi-Ping Gao, Le Lin, Yu-Xi Chen and Kang Zhang
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Explore, Compare, and Predict Investment Opportunities through What-If Analysis: US Housing Market Investigation <br>
+                                        small Hongruyu Chen, Fernando Gonzalez, Oto Mraz, Sophia Kuhn, Cristina Guzman and Mennatallah El-Assady
+
+                        tr.text-muted
+                            td 14:30-14:50
+                            td Coffee Break
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td(rowspan = '2') #[a(name = 't6') 14:50-16:20]
+                            td.d-flex #[strong Tech. Paper Session 6: Aesthetics and Art]
+                                //- small.ms-auto Session Chair: Michael Burch
+                        tr(style="border-left: 7px solid #FCE4D6") 
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Interplay between Spatial Ability and Visual Complexity in the Aesthetic Appreciation of Landscape Paintings <br>
+                                        small Kunlin Jin, Rongrong Chen
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span OdorV-Art: An Initial Exploration of An Olfactory Intervention for Appreciating Style Information of Artworks in Virtual Museum <br>
+                                        small Shumeng Zhang, Ziyan Wang, You Zhou, Hao Cui, Shihan Fu, Zeyu Wang and Mingming Fan
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span The Rich, the Poor, and the Ugly: An Aesthetic-Perspective Assessment of NFT Values <br>
+                                        small Yihan Chen, Yilin Ye and Wei Zeng
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Collection Space Navigator: An Interactive Visualization Interface for Multidimensional Datasets <br>
+                                        small Tillmann Ohm, Mar Canet Sola, Andres Karjus and Maximilian Schich
+                        tr
+                            td 
+                        tr(style="border-left: 7px solid #FCE4D6")
+                            td(rowspan = '2') #[a(name = 't7') 14:50-16:20]
+                            td.d-flex #[strong Tech. Paper Session 7: Machine Learning and Visualization]
+                                //- small.ms-auto Session Chair: Michael Burch
+                        tr(style="border-left: 7px solid #FCE4D6") 
+                            td
+                                ul.px-0
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Visual Analysis of Scene-Graph-Based Visual Question Answering <br>
+                                        small Noel Schäfer, Sebastian Künzel, Tanja Munz-Körner, Pascal Tilli, Sandeep Vidyapu, Ngoc Thang Vu and Daniel Weiskopf
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Graph-based Latent Space Traversal for New Molecules Discovery <br>
+                                        small Yang Zhang, Jie Li and Chao Xu
+                                    li.pb-1 
+                                        span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                        span Enhancing Visual Understanding by Removing Dithering with Global and Self-Conditioned Transformation <br>
+                                        small Yifei Huang, Chenhui Li, Risheng Liu, Tianyi Liang and Changbo Wang
+                                    li.pb-1 
+                                        span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
+                                        span Visual Analysis of DDPG Models by Exploring the Space of Experience <br>
+                                        small Huixue Wang, Yunzhe Wang, You Lu, Qiming Fu and Jianping Chen
+
+                        tr.text-muted
+                            td 16:20-16:50
+                            td Closing and VINCI 2024
+                        
+
+
+        .row.justify-content-center
+            .col-custom.col-padding
+
+                +h2('Presentation Times')
+                p The following presentation times apply to the different paper types:
+
+                .col-lg-10.col-11.mt-4
+                    table.table.table-sm.table-borderless.align-middle.table-hover
+                        thead
+                            tr.text-end
+                                th(scope = 'col') 
+                                th(scope = 'col') Presentation Time
+                                th(scope = 'col') Questions
+                        tbody
+                            tr.border-bottom.border-muted
+                                td 
+                                    span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
+                                    span / Full Paper
+                                td.text-end 20 Minutes 
+                                td.text-end  5 Minutes
+                            tr.border-bottom.border-muted
+                                td 
+                                    span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP
+                                    span / Short Paper
+                                td.text-end 15 Minutes 
+                                td.text-end  5 Minutes
+                            //- tr.border-bottom.border-muted
+                            //-     td PP / Poster Paper
+                            //-     td.text-end 10 Minutes 
+                            //-     td.text-end 5 Minutes
+                            tr.border-muted
+                                td 
+                                    span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
+                                    span / Keynote
+                                td.text-end 45 Minutes
+                                td.text-end 15 Minutes
 
 
