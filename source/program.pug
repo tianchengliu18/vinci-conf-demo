@@ -20,6 +20,9 @@ block content
                     //- li.list-item #[a(href="program.html#day02") September 23, 2023 / Day 2 / Saturday]
                     //- li.list-item #[a(href="program.html#day03") September 24, 2023 / Day 3 / Sunday]
                     li.list-item #[ All times are given in China (UTC+8).]
+                    li.list-item #[ Keynote/Tech./Panel - Lecture Hall C.]
+                    li.list-item #[ Art - E1-101.]
+                    li.list-item #[ Exhibition tour - CMA Lab (E2, 3rd Floor).]
 
                 test
 
@@ -51,7 +54,7 @@ block content
                                 tr.text-center.border-bottom.border-dark
                                     td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Morning ]
                                     td.border-end.pe-4.border-dark.border #[ 8:30 ]
-                                    td(rowspan='10').border-end.pe-4.border-dark.border #[ Reception]
+                                    td(rowspan='7').border-end.pe-4.border-dark.border #[ Reception]
                                     td(colspan='2').border-end.pe-4.border-dark.border #[ Opening]
                                     td(colspan='2').border-end.pe-4.border-dark.border
                                 tr.text-center.border-bottom.border-dark
@@ -88,6 +91,7 @@ block content
                                     td(colspan='4').border-end.pe-4.border-dark.border #[ Coffee Break]
                                 tr.text-center.border-bottom.border-dark
                                     td.border-end.pe-4.border-dark.border #[ 14:50 ]
+                                    td(rowspan='2').border-end.pe-4.border-dark.border #[ Panel]
                                     td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t2" style="color: black;") Tech. S2]
                                     td(colspan='1' style="background-color: #DFDDED").border-end.pe-4.border-dark.border #[a(href="program.html#a2" style="color: black;") Art S2]
                                     td(colspan='1' style="background-color: #FCE4D6").border-end.pe-4.border-dark.border #[a(href="program.html#t6" style="color: black;") Tech. S6]
@@ -101,6 +105,7 @@ block content
                                 tr.text-center.border-bottom.border-dark
                                     td(scope = 'row' rowspan='4').border-end.border-dark.border #[ Evening ]
                                     td.border-end.pe-4.border-dark.border #[ 18:30 ]
+                                    td(rowspan='1').border-end.pe-4.border-dark.border
                                     td(colspan='2').border-end.pe-4.border-dark.border #[ Banquet]
                                     td(colspan='2').border-end.pe-4.border-dark.border
 
@@ -112,8 +117,12 @@ block content
                             th(scope = 'col' colspan = '1') #[a(name = 'day01') Friday / September 22, 2023 / Day One]
                     tbody
                         tr.text-muted
-                            td(rowspan='2') 8:30-16:50
+                            td(rowspan='1') 8:30-16:50
                             td Reception
+
+                        tr.text-muted
+                            td(rowspan='1') 15:00-17:00
+                            td Panel
 
 
                 table.table.table-borderless.align-top.table-program
@@ -133,6 +142,7 @@ block content
                         tr(style="border-left: 7px solid #AFDAF2")
                             td(rowspan = '2') #[a(name='k1') 09:00-10:00]
                             td.d-flex #[strong Keynote Talk 1]
+                                small.ms-auto Lecture Hall C
                                 //- small.ms-auto Session Chair: Michael Burch
                         tr(style="border-left: 7px solid #AFDAF2")
                             td 
@@ -144,10 +154,13 @@ block content
                             td Coffee Break
                         tr(style="border-left: 7px solid #FCE4D6")
                             td(rowspan = '2') #[a(name = 't1') 10:20-11:50]
-                            td.d-flex #[strong Tech. Paper Session 1: Visual Communication]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td
+                                span.d-flex #[strong Tech. Paper Session 1: Visual Communication]
+                                    small.ms-auto Lecture Hall C
+                                small.ms-auto Session Chair: Lingyun Yu
                         tr(style="border-left: 7px solid #FCE4D6") 
                             td
+                                //- small Session Chair: Lingyun Yu
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -169,10 +182,13 @@ block content
                             td
                         tr(style="border-left: 7px solid #DFDDED;")
                             td(rowspan = '2') #[a(name = 'a1') 10:20-11:50]
-                            td.d-flex #[strong Art Paper Session 1: Cultural Heritage and Soft Datafication]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td
+                                span.d-flex #[strong Art Paper Session 1: Cultural Heritage and Soft Datafication]
+                                    small.ms-auto E1-101
+                                small.ms-auto Session Chair: Rual Masu
                         tr(style="border-left: 7px solid #DFDDED")
                             td
+                                //- small Session Chair: Rual Masu
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -198,11 +214,12 @@ block content
                         tr(style="border-left: 7px solid #AFDAF2")
                             td(rowspan = '2') #[a(name = 'k2') 13:30-14:30]
                             td.d-flex #[strong Keynote Talk 2]
+                                small.ms-auto Lecture Hall C
                                 //- small.ms-auto Session Chair: Sabrina Lindau
                         tr(style="border-left: 7px solid #AFDAF2")
                             td 
                                 span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
-                                span Interactive assistive surgery with the support of a smart digital surgeon and a social robot <br>
+                                span AI for Good: using a social humanoid robot to improve quality of life <br>
                                 small Prof. Dr. Nadia Magnenat Thalmann
 
                         tr.text-muted
@@ -210,10 +227,13 @@ block content
                             td Coffee Break
                         tr(style="border-left: 7px solid #FCE4D6") 
                             td(rowspan = '2') #[a(name = 't2') 14:50-16:20]
-                            td.d-flex #[strong Tech. Paper Session 2: Visual Analytics]
-                                //- small.ms-auto Session Chair: Michael Burch
+                            td
+                                span.d-flex #[strong Tech. Paper Session 2: Visual Analytics]
+                                    small.ms-auto Lecture Hall C
+                                small.ms-auto Session Chair: Chongke Bi
                         tr(style="border-left: 7px solid #FCE4D6") 
                             td
+                                //- small Session Chair: Chongke Bi
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -229,18 +249,22 @@ block content
                                         small Sihan Pan and Jun Tao
                                     li.pb-1 
                                         span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
-                                        span Visual Analytics of the Effect of Age on the Spatial Learning Capabilities of Sleep-Deprived Drosophila <br>
-                                        small Kevin Zhao, Dina Ellsworth and Craig Queenan
+                                        span Metaphor Design of Dockless Bike-sharing Based on Spatio-temporal Geographic Data <br>
+                                        small Kelin Li, Hong Yin, Dong Li, Kang Zhang and Changbo Wang
+                                        
                         
                         tr 
                             td
                         
                         tr(style="border-left: 7px solid #DFDDED;")
-                            td(rowspan = '2') #[a(name = 'a2') 10:20-11:50]
-                            td.d-flex #[strong Art Paper Session 2: Art Museums and Audience Interaction]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td(rowspan = '2') #[a(name = 'a2') 14:50-16:20]
+                            td
+                                span.d-flex #[strong Art Paper Session 2: Art Museums and Audience Interaction]
+                                    small.ms-auto E1-101
+                                small.ms-auto Session Chair: Varvara Guljajeva
                         tr(style="border-left: 7px solid #DFDDED")
                             td
+                                //- small Session Chair: Varvara Guljajeva
                                 ul.px-0
                                     //- li.pb-1 
                                     //-     span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -277,7 +301,8 @@ block content
 
                         tr.text-muted
                             td 16:20-16:50
-                            td Exhibition tour
+                            td.d-flex Exhibition tour
+                                small.ms-auto CMA Lab (E2, 3rd Floor)
                         
 
                         tr.text-muted
@@ -294,8 +319,10 @@ block content
                             td
                         tr(style="border-left: 7px solid #AFDAF2")
                             td(rowspan = '2') #[a(name = 'k3') 09:00-10:00]
-                            td.d-flex #[strong Keynote Talk 3]
-                                //- small.ms-auto Session Chair: Michael Burch
+                            td 
+                                span.d-flex #[strong Keynote Talk 3]
+                                    small.ms-auto Lecture Hall C
+                                //- small Session Chair: Michael Burch
                         tr(style="border-left: 7px solid #AFDAF2")
                             td 
                                 span(style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;") KN
@@ -306,10 +333,13 @@ block content
                             td Coffee Break
                         tr(style="border-left: 7px solid #FCE4D6")  
                             td(rowspan = '2') #[a(name = 't3') 10:20-11:50]
-                            td.d-flex #[strong Tech. Paper Session 3: Perception and Design]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td
+                                span.d-flex #[strong Tech. Paper Session 3: Perception and Design]
+                                    small.ms-auto Lecture Hall C
+                                small.ms-auto Session Chair: Rongrong Chen
                         tr(style="border-left: 7px solid #FCE4D6")  
                             td
+                                //- small Session Chair: Rongrong Chen
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -325,23 +355,25 @@ block content
                                         small Xueying Wen and Liang Tan
                                     li.pb-1 
                                         span(style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;") SP 
-                                        span Metaphor Design of Dockless Bike-sharing Based on Spatio-temporal Geographic Data <br>
-                                        small Kelin Li, Hong Yin, Dong Li, Kang Zhang and Changbo Wang
-                        
+                                        span Visual Analytics of the Effect of Age on the Spatial Learning Capabilities of Sleep-Deprived Drosophila <br>
+                                        small Kevin Zhao, Dina Ellsworth and Craig Queenan
                         tr
                             td
                         
                         tr(style="border-left: 7px solid #DFDDED")
                             td(rowspan = '2') #[a(name = 'a3') 10:20-11:50]
-                            td.d-flex #[strong Art Paper Session 3: Extended Cinema]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td
+                                span.d-flex #[strong Art Paper Session 3: Extended Cinema]
+                                    small.ms-auto E1-101
+                                small.ms-auto Session Chair: Zeyu Wang
                         tr(style="border-left: 7px solid #DFDDED")
                             td
+                                //- small Session Chair: Zeyu Wang
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
                                         span Urban Symphony: An AI and Data-Driven Approach to Real-Time Animation for Public Digital Art <br>
-                                        small Urban Symphony: An AI and Data-Driven Approach to Real-Time Animation for Public Digital Art
+                                        small Rungu Lin, Yongen Ke and Kang Zhang
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
                                         span Simonstown: An AI-facilitated Interactive Story of Love, Life, and Pandemic <br>
@@ -361,9 +393,11 @@ block content
                             td Lunch Break
                         
                         tr(style="border-left: 7px solid #FCE4D6")
-                            td(rowspan = '2') #[a(name = 't4') 10:20-11:50]
-                            td.d-flex #[strong Tech. Paper Session 4: Extended Reality]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td(rowspan = '2') #[a(name = 't4') 13:30-14:30]
+                            td
+                                span.d-flex #[strong Tech. Paper Session 4: Extended Reality]
+                                    small.ms-auto Lecture Hall C
+                                small Session Chair: Qian Zhu
                         tr(style="border-left: 7px solid #FCE4D6")
                             td
                                 ul.px-0
@@ -388,11 +422,14 @@ block content
                             td
                         
                         tr(style="border-left: 7px solid #FCE4D6")
-                            td(rowspan = '2') #[a(name = 't5') 10:20-11:50]
-                            td.d-flex #[strong Tech. Paper Session 5: Finance]
-                                //- small.ms-auto Session Chair: Günter Wallner
+                            td(rowspan = '2') #[a(name = 't5') 13:30-14:30]
+                            td
+                                span.d-flex #[strong Tech. Paper Session 5: Finance]
+                                    small.ms-auto Lecture Hall C
+                                small.ms-auto Session Chair: Chenhui Li
                         tr(style="border-left: 7px solid #FCE4D6")
                             td
+                                //- small Session Chair: Chenhui Li
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 
@@ -416,8 +453,10 @@ block content
                             td Coffee Break
                         tr(style="border-left: 7px solid #FCE4D6")
                             td(rowspan = '2') #[a(name = 't6') 14:50-16:20]
-                            td.d-flex #[strong Tech. Paper Session 6: Aesthetics and Art]
-                                //- small.ms-auto Session Chair: Michael Burch
+                            td
+                                span.d-flex #[strong Tech. Paper Session 6: Aesthetics and Art]
+                                    small.ms-auto Lecture Hall C
+                                small Session Chair: Bin Jiang
                         tr(style="border-left: 7px solid #FCE4D6") 
                             td
                                 ul.px-0
@@ -441,10 +480,13 @@ block content
                             td 
                         tr(style="border-left: 7px solid #FCE4D6")
                             td(rowspan = '2') #[a(name = 't7') 14:50-16:20]
-                            td.d-flex #[strong Tech. Paper Session 7: Machine Learning and Visualization]
-                                //- small.ms-auto Session Chair: Michael Burch
+                            td 
+                                span.d-flex #[strong Tech. Paper Session 7: Machine Learning and Visualization]
+                                    small.ms-auto Lecture Hall C 
+                                small.ms-auto Session Chair: Jie Li
                         tr(style="border-left: 7px solid #FCE4D6") 
                             td
+                                //- small Session Chair: Jie Li
                                 ul.px-0
                                     li.pb-1 
                                         span(style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;") FP 

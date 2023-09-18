@@ -9,7 +9,10 @@ section.container
 
                 each page in pages
                     li.nav-item.d-none.d-xl-block
-                        if(page.url === active.url)
+                        if (page.title === "Exhibition")
+                            a(href="http://10.121.14.11:8088/").nav-link= page.title
+                            //- .nav-link= page.title
+                        else if(page.url === active.url)
                             .active
                             a(href= page.url + '.html').nav-link.disabled= page.title
                         else
@@ -20,7 +23,12 @@ section.container
                     ul.dropdown-menu
                         each page in pages
                             li
-                                if(page.url === active.url)
+                                if (page.title === "Exhibition")
+                                    a(href="http://10.121.14.11:8088/").dropdown-item= page.title
+                                //- if (page.title === "Exhibition")
+                                //-     a(href= page.url).dropdown-item= page.title
+                                //- else 
+                                else if(page.url === active.url)
                                     .active
                                     a(href= page.url + '.html').dropdown-item.disabled= page.title
                                 else
