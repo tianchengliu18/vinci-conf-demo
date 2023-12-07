@@ -26,12 +26,13 @@ In addition, development requires [Node.js](https://nodejs.org/en/).
 ## 3. Web deployment
 
 ### Server Information
-
-> // 温子剀 Alex Zikai WEN's 服务器资源申请 Server Resource Application202209061730000098682.pdf
-> // please install some terminal tools, such as Xshell, Xftp, PortX
-> External IP: 103.189.154.16
-> Login Account: cmauser
-> Init Password: dhHHk&23
+···
+// 温子剀 Alex Zikai WEN's 服务器资源申请 Server Resource Application202209061730000098682.pdf
+// please install some terminal tools, such as Xshell, Xftp, PortX
+External IP: 103.189.154.16
+Login Account: cmauser
+Init Password: dhHHk&23
+```
 
 1. If `/home/cmauser/xvdd/www` is not empty, please delete all files.
 
