@@ -1,4 +1,11 @@
-85a067ee88d778218bbfb99c18074064a5c3304b02747a6f87308b30e2dbd2d1
+Xshell Xftp
+* send the "build" to '/home/cmauser/xvdd/www/'
+
+docker cp /home/cmauser/xvdd/www/* 85a067ee88d778218bbfb99c18074064a5c3304b02747a6f87308b30e2dbd2d1:/usr/share/nginx
 docker exec -it 85a067ee88d778218bbfb99c18074064a5c3304b02747a6f87308b30e2dbd2d1 bash
-cp -r /www/build/* /usr/share/nginx/html
-docker cp /home/cmauser/xvdd/www/* 85a067ee88d778218bbfb99c18074064a5c3304b02747a6f87308b30e2dbd2d1:/usr/share/nginx/html
+cd /usr/share/nginx/
+rm -rf html/*
+cp -r build/* html/
+rm -rf build/
+
+* Close Terminal
